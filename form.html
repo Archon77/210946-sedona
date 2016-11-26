@@ -34,12 +34,57 @@
         <img src="" alt="Welcome to the Sedona!" class="intro__pic">
       </div>
     </header>
-    
-   <main>
-     
-   </main>
-   
-   <footer class="page-footer">
+    <main class="form-page">
+      <div class="feedback">
+        <h1 class="feedback__title">Оставьте свой отзыв</h1>
+        <p class="feedback__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </div>
+      <form action="" method="get">
+        <fieldset class="represent">
+          <legend>Представтесь:</legend>
+          <label for="first_name">Имя<sup>*</sup>:</label> <!-- required кажется звездой не отмечает, так что пока так  -->
+          <input class="represent__item" id="first_name" type="text" name="first_name" placeholder="Петр" required>
+          <label for="last_name">Фамилия<sup>*</sup>:</label>
+          <input class="represent__item" id="last_name" type="text" name="last_name" placeholder="Иванов" required>
+          <label for="patronymic">Отчество:</label>
+          <input class="represent__item" id="patronymic" type="text" name="patronymic" placeholder="Александрович">
+        </fieldset>
+        <fieldset class="contacts">
+          <legend>Контактная информация:</legend>
+          <label for="phone">Контактный телефон<sup>*</sup>:</label>
+          <input class="contacts__item" id="phone" type="tel" name="phone" placeholder="Введите телефон" required> <!-- изображение бэкграундом в стилях -->
+          <!-- "ошибка, перепроверьте номер" через паттерн прикручиватеся? -->
+          <label for="email">Электронная почта<sup>*</sup>:</label>
+          <input class="contacts__item" id="email" type="email" name="email" placeholder="Введите e-mail" required>
+        </fieldset>
+        <fieldset class="impression">
+          <legend>Ваше общее впечатление:</legend>
+          <input class="impression__item" name="impression" id="positive" type="radio" value="positive" checked>
+          <label for="positive">Скорее положительное</label>
+          <input class="impression__item" name="impression" id="negative" type="radio" value="negative">
+          <label for="negative">Скорее отрицательное</label>
+          <input class="impression__item" name="impression" id="neutral" type="radio" value="neutral">
+          <label for="neutral">Затрудняюсь ответить</label>
+        </fieldset>
+        <fieldset class="attraction">
+          <legend>Посещенные достопримечательности:</legend>
+          <input class="attraction__item" name="attraction" id="devil-bridge" type="checkbox" value="devil-bridge" checked>
+          <label for="devil-bridge">Мост дьявола</label>
+          <input class="attraction__item" name="attraction" id="slide-park" type="checkbox" value="slide-park" checked>
+          <label for="slide-park">Слайд-парк</label>
+          <input class="attraction__item" name="attraction" id="mount-bell" type="checkbox" value="mount-bell">
+          <label for="mount-bell">Гора-колокол</label>
+          <input class="attraction__item" name="attraction" id="red-rocks" type="checkbox" value="red-rocks" checked>
+          <label for="red-rocks">Красные скалы</label>
+        </fieldset>
+        <fieldset class="comment">
+          <legend>Опишите свои эмоции:</legend>
+          <textarea class="comment__area" rows="10" cols="10"></textarea>
+        </fieldset>
+        <input type="submit" value="Отправить отзыв">
+      </form>
+    </main>
+    <footer class="page-footer">
       <div class="page-footer__inner">
         <h3 class="page-footer__title">#Visitsedona</h3>
         <div class="social">

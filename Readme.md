@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Денис Мальцев](https://up.htmlacademy.ru/adaptive/9/user/210946).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Кравченко](https://htmlacademy.ru/profile/id13921).
 
 ---
 
