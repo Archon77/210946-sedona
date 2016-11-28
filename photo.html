@@ -5,125 +5,137 @@
     <title>HTML Academy: Sedona</title>
   </head>
   <body>
-    <header class="page-header">
-      <nav class="menu">
-        <ul><!-- Заглавные потом сделаю uppercase'm-->
-          <li class="menu__item">
-            <a href="#">Главная</a>
-          </li>
-          <li class="menu__item">
-            <a href="#">Фото и видео</a>
-          </li>
-          <li class="menu__item">
-            <a href="#">Форма отзыва</a></li>
-          <li class="menu__item">
-            <a href="#">HTML Academy</a>
-          </li>
-        </ul>
-        <button class="menu__esc-btn">X</button><!-- "x" временно -->
-      </nav>
-      <div class="logo"><!-- та же проблема, что и с футером /--? -->
-        <a href="#">
-          <img src="http://placehold.it/105x85" alt="" class="logo__pic" width="105" height="85">
-        </a>
-      </div>
-      <div class="mobile-menu">
-        <button class="mobile-menu__btn">=</button><!-- "=" временно -->
-      </div>
-      <div class="intro">
-        <img src="" alt="Welcome to the Sedona!" class="intro__pic">
-      </div>
-    </header>
-    <main class="photo-page">
-      <div class="content"><!--photo-page__inner? -->
-        <h1 class="photo-page__title">Фото и видео</h1>
-        <p class="photo-page__discription">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-      </div>
-      <article class="photo-content">
-        <div class="photo-content__inner">
-          <img src="http://placehold.it/280x280" alt="" class="photo-content__pic" width="280" height="280">
-          <h2 class="photo-content__title">Неродные просторы</h2>
-          <span class="photo-content__author">Автор фото: Борис</span>
-          <div class="photo-like">
-            <a href="#"><!-- смутно представляю реализацию, так что пока - тут ссылка -->
-              <img class="photo-like_pic" src="http://placehold.it/20x20" alt="" width="20" height="20">
-            </a>
-            <span class="photo-like__num">1350</span><!-- то же, что и со ссылкой -->
+    <div class="container">
+      <header class="page-header">
+        <nav class="main-menu">
+          <ul class="main-menu__list">
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link main-menu__link--active" href="photo.html">Фото и видео</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="form.html">Форма отзыва</a></li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="page-header__top-row">
+          <div class="logo">
+            <img class="logo__pic" src="http://placehold.it/105x85" alt="" width="105" height="85">
           </div>
         </div>
-      </article>
-      <article class="photo-content">
-        <div class="photo-content__inner">
-          <img src="http://placehold.it/280x280" alt="" class="photo-content__pic" width="280" height="280">
-          <h2 class="photo-content__title">Местная растительность</h2>
-          <span class="photo-content__author">Автор фото: Сергей</span>
-          <div class="photo-like">
-            <a href="#">
-              <img class="photo-like_pic" src="http://placehold.it/20x20" alt="" width="20" height="20">
+        <div class="intro">
+          <img src="" alt="Welcome to the Sedona!" class="intro__pic">
+        </div>
+      </header>
+      <main class="page-content">
+        <div class="promo"><!--photo-page__inner? -->
+          <h1 class="promo__title">Фото и видео</h1>
+          <p class="promo__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        </div>
+        <section class="gellery">
+          <article class="gallery-item">
+            <a class="gallery-item__link">
+              <img src="http://placehold.it/280x280" alt="" width="280" height="280">
             </a>
-            <span class="photo-like__num">143</span>
+            <div class="gallery-item__footer">
+              <div class="gallery-item__text">
+                <b class="gallery-item__title">Неродные просторы</b>
+                <p class="gallery-item__author">Автор фото: Борис</p>
+              </div>
+              <div class="gallery-item-likes">
+                <img class="photo-likes_pic" src="http://placehold.it/20x20" alt="" width="20" height="20">
+                <span class="photo-like__count">1350</span>
+              </div>
+            </div>
+          </article>
+          <article class="gallery-item">
+            <a class="gallery-item__link">
+              <img src="http://placehold.it/280x280" alt="" width="280" height="280">
+            </a>
+            <div class="gallery-item__footer">
+              <div class="gallery-item__text">
+                <b class="gallery-item__title">Местная растительность</b>
+                <p class="gallery-item__author">Автор фото: Сергей</p>
+              </div>
+              <div class="gallery-item-likes">
+                <img class="photo-likes_pic" src="http://placehold.it/20x20" alt="" width="20" height="20">
+                <span class="photo-like__count">143</span>
+              </div>
+            </div>
+          </article>
+          <article class="gallery-item">
+              <a class="gallery-item__link">
+                <img src="http://placehold.it/280x280" alt="" width="280" height="280">
+              </a>
+              <div class="gallery-item__footer">
+              <div class="gallery-item__text">
+                <b class="gallery-item__title">Дорога на север</b>
+                <p class="gallery-item__author">Автор фото: Петр</p>
+              </div>
+              <div class="gallery-item-likes">
+                <img class="photo-likes_pic" src="http://placehold.it/20x20" alt="" width="20" height="20">
+                <span class="photo-like__count">96</span>
+              </div>
+            </div>
+          </article>
+          <article class="gallery-item">
+            <a class="gallery-item__link">
+              <img src="http://placehold.it/280x280" alt="" width="280" height="280">
+            </a>
+            <div class="gallery-item__footer">
+              <div class="gallery-item__text">
+                <b class="gallery-item__title">Мост дьявола</b>
+                <p class="gallery-item__author">Автор фото: Антон</p>
+              </div>
+              <div class="gallery-item-likes">
+                <img class="photo-likes_pic" src="http://placehold.it/20x20" alt="" width="20" height="20">
+                <span class="photo-like__count">254</span>
+              </div>
+            </div>
+          </article>
+        </section>
+        <div class="offer offer--gallery"><!-- переделал пока на promo -->
+          <b class="offer__title">Вы ещё сомневаетесь?</b>
+          <p class="offer__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        </div>
+        <div class="gallery-video">
+          <div class="gallery-video-preview"></div>
+          <div class="video-controls">
+            <div class="video-controls__volume">
+              <div class="video-controls__volume--scale"></div>
+            </div>
+            <div class="video-controls__main">
+              <div class="video-controls__replay"></div>
+              <div class="video-controls__subtitles"></div>
+              <div class="video-controls__size"></div>
+            </div>
           </div>
         </div>
-      </article>
-      <article class="photo-content">
-        <div class="photo-content__inner">
-          <img src="http://placehold.it/280x280" alt="" class="photo-content__pic" width="280" height="280">
-          <h2 class="photo-content__title">Дорога на север</h2>
-          <span class="photo-content__author">Автор фото: Петр</span>
-          <div class="photo-like">
-            <a href="#">
-              <img class="photo-like_pic" src="http://placehold.it/20x20" alt="" width="20" height="20">
-            </a>
-            <span class="photo-like__num">96</span>
-          </div>
-        </div>
-      </article>
-      <article class="photo-content">
-        <div class="photo-content__inner">
-          <img src="http://placehold.it/280x280" alt="" class="photo-content__pic" width="280" height="280">
-          <h2 class="photo-content__title">Мост дьявола</h2>
-          <span class="photo-content__author">Автор фото: Антон</span>
-          <div class="photo-like">
-            <a href="#">
-              <img class="photo-like_pic" src="http://placehold.it/20x20" alt="" width="20" height="20">
-            </a>
-            <span class="photo-like__num">254</span>
-          </div>
-        </div>
-      </article>
-      <div class="content"><!--photo-page__inner? -->
-        <h3 class="photo-page__title">Вы ещё сомневаетесь?</h3>
-        <p class="photo-page__discription">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-      </div>
-      <div class="photo-video"><!-- потом здесь появится <video>-->
-        <img src="http://placehold.it/320x200" alt="" width="320" height="200">
-      </div>
-    </main>
-    <footer class="page-footer">
-      <div class="page-footer__inner">
-        <h3 class="page-footer__title">#Visitsedona</h3>
+      </main>
+      <footer class="page-footer">
+        <b class="page-footer__tag">#Visitsedona</b>
         <div class="social">
-          <div class="social_item social_item--twitter">
-            <a href="https://twitter.com/">
-              <img src="http://placehold.it/45x48" alt="" width="45" height="48"><!-- пока так, потом спрайтом -->
-            </a>
-          </div>
-          <div class="social_item social_item--facebook">
-            <a href="https://www.facebook.com/">
-              <img src="http://placehold.it/45x48" alt="" width="45" height="48">
-            </a>
-          </div>
-          <div class="social_item social_item--youtube">
-            <a href="https://www.youtube.com/">
-              <img src="http://placehold.it/45x48" alt="" width="45" height="48">
-            </a>
-          </div>
+          <a class="social_btn social_btn--twitter" href="https://twitter.com/">
+            <img src="http://placehold.it/45x48" alt="" width="45" height="48">
+          </a>
+          <a class="social_btn social_btn--facebook" href="https://www.facebook.com/">
+            <img src="http://placehold.it/45x48" alt="" width="45" height="48">
+          </a>
+          <a class="social_btn social_btn--youtube" href="https://www.youtube.com/">
+            <img src="http://placehold.it/45x48" alt="" width="45" height="48">
+          </a>
         </div>
-        <div class="footer-logo"><!-- page-footer__logo... page-footer__logo__text? -->
-          <span class="footer-logo__text">Разработано</span>
-          <img src="http://placehold.it/25x35" alt="" class="footer-logo__pic" width="25" height="35">
+        <div class="copyright">
+          Разработано
+          <a href="" class="copyright__link">
+            <img src="http://placehold.it/25x35" alt="" class="copyright__pic" width="25" height="35">
+          </a>
         </div>
-      </div>
     </footer>
+    </div>
   </body>
 </html>

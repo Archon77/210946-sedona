@@ -5,111 +5,112 @@
     <title>HTML Academy: Sedona</title>
   </head>
   <body>
+    <div class="container">
     <header class="page-header">
-      <nav class="menu">
-        <ul><!-- Заглавные потом сделаю uppercase'm-->
-          <li class="menu__item">
-            <a href="#">Главная</a>
+      <nav class="main-menu">
+        <ul class="main-menu__list">
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="index.html">Главная</a>
           </li>
-          <li class="menu__item">
-            <a href="#">Фото и видео</a>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="photo.html">Фото и видео</a>
           </li>
-          <li class="menu__item">
-            <a href="#">Форма отзыва</a></li>
-          <li class="menu__item">
-            <a href="#">HTML Academy</a>
+          <li class="main-menu__item">
+            <a class="main-menu__link main-menu__link--active" href="form.html">Форма отзыва</a></li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">HTML Academy</a>
           </li>
         </ul>
-        <button class="menu__esc-btn">X</button><!-- "x" временно -->
       </nav>
-      <div class="logo"><!-- та же проблема, что и с футером /--? -->
-        <a href="#">
-          <img src="http://placehold.it/105x85" alt="" class="logo__pic" width="105" height="85">
-        </a>
-      </div>
-      <div class="mobile-menu">
-        <button class="mobile-menu__btn">=</button><!-- "=" временно -->
+      <div class="page-header__top-row">
+        <div class="logo">
+          <img class="logo__pic" src="http://placehold.it/105x85" alt="" width="105" height="85">
+        </div>
       </div>
       <div class="intro">
         <img src="" alt="Welcome to the Sedona!" class="intro__pic">
       </div>
     </header>
-    <main class="form-page">
-      <div class="feedback">
-        <h1 class="feedback__title">Оставьте свой отзыв</h1>
-        <p class="feedback__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    <main class="page-content">
+      <div class="promo">
+        <h1 class="promo__title">Оставьте свой отзыв</h1>
+        <p class="promo__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
-      <form action="" method="get">
-        <fieldset class="represent">
-          <legend>Представтесь:</legend>
-          <label for="first_name">Имя<sup>*</sup>:</label> <!-- required кажется звездой не отмечает, так что пока так  -->
-          <input class="represent__item" id="first_name" type="text" name="first_name" placeholder="Петр" required>
-          <label for="last_name">Фамилия<sup>*</sup>:</label>
-          <input class="represent__item" id="last_name" type="text" name="last_name" placeholder="Иванов" required>
-          <label for="patronymic">Отчество:</label>
-          <input class="represent__item" id="patronymic" type="text" name="patronymic" placeholder="Александрович">
-        </fieldset>
-        <fieldset class="contacts">
-          <legend>Контактная информация:</legend>
-          <label for="phone">Контактный телефон<sup>*</sup>:</label>
-          <input class="contacts__item" id="phone" type="tel" name="phone" placeholder="Введите телефон" required> <!-- изображение бэкграундом в стилях -->
-          <!-- "ошибка, перепроверьте номер" через паттерн номера прикручиватеся? -->
-          <label for="email">Электронная почта<sup>*</sup>:</label>
-          <input class="contacts__item" id="email" type="email" name="email" placeholder="Введите e-mail" required>
-        </fieldset>
-        <fieldset class="impression">
-          <legend>Ваше общее впечатление:</legend>
-          <input class="impression__item" name="impression" id="positive" type="radio" value="positive" checked>
-          <label for="positive">Скорее положительное</label>
-          <input class="impression__item" name="impression" id="negative" type="radio" value="negative">
-          <label for="negative">Скорее отрицательное</label>
-          <input class="impression__item" name="impression" id="neutral" type="radio" value="neutral">
-          <label for="neutral">Затрудняюсь ответить</label>
-        </fieldset>
-        <fieldset class="attraction">
-          <legend>Посещенные достопримечательности:</legend>
-          <input class="attraction__item" name="attraction" id="devil-bridge" type="checkbox" value="devil-bridge" checked>
-          <label for="devil-bridge">Мост дьявола</label>
-          <input class="attraction__item" name="attraction" id="slide-park" type="checkbox" value="slide-park" checked>
-          <label for="slide-park">Слайд-парк</label>
-          <input class="attraction__item" name="attraction" id="mount-bell" type="checkbox" value="mount-bell">
-          <label for="mount-bell">Гора-колокол</label>
-          <input class="attraction__item" name="attraction" id="red-rocks" type="checkbox" value="red-rocks" checked>
-          <label for="red-rocks">Красные скалы</label>
-        </fieldset>
-        <fieldset class="comment">
-          <legend>Опишите свои эмоции:</legend>
-          <!-- размер 10х10 временный -->
-          <textarea class="comment__area" rows="10" cols="10"></textarea>
-        </fieldset>
-        <input type="submit" value="Отправить отзыв">
+      <form class="review-form" action="https://echo.htmlacademy.ru/" method="get">
+        <div class="review-form__inner">
+          <fieldset class="feedback-form">
+            <legend class="review-form__legend">Представтесь:</legend>
+            <div class="review-form__group">
+              <label class="review-form__label" for="first_name">Имя<sup>*</sup>:</label> <!-- required кажется звездой не отмечает, так что пока так  -->
+              <input class="review-form__input" id="first_name" type="text" name="first_name" placeholder="Петр" required>
+              <label class="review-form__label" for="last_name">Фамилия<sup>*</sup>:</label>
+              <input class="review-form__input" id="last_name" type="text" name="last_name" placeholder="Иванов" required>
+              <label class="review-form__label" for="patronymic">Отчество:</label>
+              <input class="review-form__input" id="patronymic" type="text" name="patronymic" placeholder="Александрович">
+            </div>
+          </fieldset>
+          <fieldset class="feedback-form">
+            <legend class="review-form__legend">Контактная информация:</legend>
+            <div class="review-form__group">
+              <label class="review-form__label" for="phone">Контактный телефон<sup>*</sup>:</label>
+              <input class="review-form__input" id="phone" type="tel" name="phone" placeholder="Введите телефон" required> <!-- изображение бэкграундом в стилях -->
+              <small class="review-form__error"></small>
+              <label class="review-form__label" for="email">Электронная почта<sup>*</sup>:</label>
+              <input class="review-form__input" id="email" type="email" name="email" placeholder="Введите e-mail" required>
+            </div>
+          </fieldset>
+          <fieldset class="feedback-form">
+            <legend class="review-form__legend">Ваше общее впечатление:</legend>
+            <div class="review-form__group">
+              <input class="review-form__input-radio" name="impression" id="positive" type="radio" value="positive" checked>
+              <label class="review-form__label-radio" for="positive">Скорее положительное</label>
+              <input class="review-form__input-radio" name="impression" id="negative" type="radio" value="negative">
+              <label class="review-form__label-radio" for="negative">Скорее отрицательное</label>
+              <input class="review-form__input-radio" name="impression" id="neutral" type="radio" value="neutral">
+              <label class="review-form__label-radio" for="neutral">Затрудняюсь ответить</label>
+            </div>
+          </fieldset>
+          <fieldset class="feedback-form">
+            <legend class="review-form__legend">Посещенные достопримечательности:</legend>
+            <div class="review-form__group">
+              <input class="review-form__input-check" name="attraction" id="devil-bridge" type="checkbox" value="devil-bridge" checked>
+              <label class="review-form__label-check" for="devil-bridge">Мост дьявола</label>
+              <input class="review-form__input-check" name="attraction" id="slide-park" type="checkbox" value="slide-park" checked>
+              <label class="review-form__label-check" for="slide-park">Слайд-парк</label>
+              <input class="review-form__input-check" name="attraction" id="mount-bell" type="checkbox" value="mount-bell">
+              <label class="review-form__label-check" for="mount-bell">Гора-колокол</label>
+              <input class="review-form__input-check" name="attraction" id="red-rocks" type="checkbox" value="red-rocks" checked>
+              <label class="review-form__label-check" for="red-rocks">Красные скалы</label>
+            </div>
+          </fieldset>
+          <fieldset class="comment">
+            <legend class="review-form__legend">Опишите свои эмоции:</legend>
+            <textarea class="comment__area" rows="5"></textarea>
+          </fieldset>
+          <input type="submit" value="Отправить отзыв">
+        </div>
       </form>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__inner">
-        <h3 class="page-footer__title">#Visitsedona</h3>
+        <b class="page-footer__tag">#Visitsedona</b>
         <div class="social">
-          <div class="social_item social_item--twitter">
-            <a href="https://twitter.com/">
-              <img src="http://placehold.it/45x48" alt="" width="45" height="48"><!-- пока так, потом спрайтом -->
-            </a>
-          </div>
-          <div class="social_item social_item--facebook">
-            <a href="https://www.facebook.com/">
-              <img src="http://placehold.it/45x48" alt="" width="45" height="48">
-            </a>
-          </div>
-          <div class="social_item social_item--youtube">
-            <a href="https://www.youtube.com/">
-              <img src="http://placehold.it/45x48" alt="" width="45" height="48">
-            </a>
-          </div>
+          <a class="social_btn social_btn--twitter" href="https://twitter.com/">
+            <img src="http://placehold.it/45x48" alt="" width="45" height="48">
+          </a>
+          <a class="social_btn social_btn--facebook" href="https://www.facebook.com/">
+            <img src="http://placehold.it/45x48" alt="" width="45" height="48">
+          </a>
+          <a class="social_btn social_btn--youtube" href="https://www.youtube.com/">
+            <img src="http://placehold.it/45x48" alt="" width="45" height="48">
+          </a>
         </div>
-        <div class="footer-logo"><!-- page-footer__logo... page-footer__logo__text? -->
-          <span class="footer-logo__text">Разработано</span>
-          <img src="http://placehold.it/25x35" alt="" class="footer-logo__pic" width="25" height="35">
+        <div class="copyright">
+          Разработано
+          <a href="" class="copyright__link">
+            <img src="http://placehold.it/25x35" alt="" class="copyright__pic" width="25" height="35">
+          </a>
         </div>
-      </div>
     </footer>
+    </div>
   </body>
 </html>
