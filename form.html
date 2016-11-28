@@ -5,39 +5,36 @@
     <title>HTML Academy: Sedona</title>
   </head>
   <body>
+   <div class="container">
     <header class="page-header">
-      <nav class="menu">
-        <ul><!-- Заглавные потом сделаю uppercase'm-->
-          <li class="menu__item">
-            <a href="#">Главная</a>
+      <nav class="main-menu">
+        <ul class="main-menu__list">
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">Главная</a>
           </li>
-          <li class="menu__item">
-            <a href="#">Фото и видео</a>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">Фото и видео</a>
           </li>
-          <li class="menu__item">
-            <a href="#">Форма отзыва</a></li>
-          <li class="menu__item">
-            <a href="#">HTML Academy</a>
+          <li class="main-menu__item">
+            <a class="main-menu__link main-menu__link--active" href="#">Форма отзыва</a></li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">HTML Academy</a>
           </li>
         </ul>
-        <button class="menu__esc-btn">X</button><!-- "x" временно -->
       </nav>
-      <div class="logo"><!-- та же проблема, что и с футером /--? -->
-        <a href="#">
-          <img src="http://placehold.it/105x85" alt="" class="logo__pic" width="105" height="85">
-        </a>
-      </div>
-      <div class="mobile-menu">
-        <button class="mobile-menu__btn">=</button><!-- "=" временно -->
+      <div class="page-header__top-row">
+        <div class="logo">
+          <img class="logo__pic" src="http://placehold.it/105x85" alt="" width="105" height="85">
+        </div>
       </div>
       <div class="intro">
         <img src="" alt="Welcome to the Sedona!" class="intro__pic">
       </div>
     </header>
-    <main class="form-page">
-      <div class="feedback">
-        <h1 class="feedback__title">Оставьте свой отзыв</h1>
-        <p class="feedback__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    <main class="page-content">
+      <div class="promo">
+        <h1 class="promo__title">Оставьте свой отзыв</h1>
+        <p class="promo__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
       <form action="" method="get">
         <fieldset class="represent">
@@ -86,30 +83,24 @@
       </form>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__inner">
-        <h3 class="page-footer__title">#Visitsedona</h3>
+        <b class="page-footer__title">#Visitsedona</b>
         <div class="social">
-          <div class="social_item social_item--twitter">
-            <a href="https://twitter.com/">
-              <img src="http://placehold.it/45x48" alt="" width="45" height="48"><!-- пока так, потом спрайтом -->
-            </a>
-          </div>
-          <div class="social_item social_item--facebook">
-            <a href="https://www.facebook.com/">
-              <img src="http://placehold.it/45x48" alt="" width="45" height="48">
-            </a>
-          </div>
-          <div class="social_item social_item--youtube">
-            <a href="https://www.youtube.com/">
-              <img src="http://placehold.it/45x48" alt="" width="45" height="48">
-            </a>
-          </div>
+          <a class="social_btn social_btn--twitter" href="https://twitter.com/">
+            <img src="http://placehold.it/45x48" alt="" width="45" height="48">
+          </a>
+          <a class="social_btn social_btn--facebook" href="https://www.facebook.com/">
+            <img src="http://placehold.it/45x48" alt="" width="45" height="48">
+          </a>
+          <a class="social_btn social_btn--youtube" href="https://www.youtube.com/">
+            <img src="http://placehold.it/45x48" alt="" width="45" height="48">
+          </a>
         </div>
-        <div class="footer-logo"><!-- page-footer__logo... page-footer__logo__text? -->
-          <span class="footer-logo__text">Разработано</span>
-          <img src="http://placehold.it/25x35" alt="" class="footer-logo__pic" width="25" height="35">
+        <div class="copyright">
+          <a href="" class="copyright__link">
+            <img src="http://placehold.it/25x35" alt="" class="copyright__pic" width="25" height="35">
+          </a>
         </div>
-      </div>
     </footer>
-  </body>
+  </div>
+</body>
 </html>

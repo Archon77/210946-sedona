@@ -5,135 +5,116 @@
     <title>HTML Academy: Sedona</title>
   </head>
   <body>
+   <div class="container">
     <header class="page-header">
-      <nav class="menu">
-        <ul><!-- Заглавные потом сделаю uppercase'm-->
-          <li class="menu__item">
-            <a href="#">Главная</a>
+      <nav class="main-menu">
+        <ul class="main-menu__list">
+          <li class="main-menu__item">
+            <a class="main-menu__link main-menu__link--active" href="#">Главная</a>
           </li>
-          <li class="menu__item">
-            <a href="#">Фото и видео</a>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">Фото и видео</a>
           </li>
-          <li class="menu__item">
-            <a href="#">Форма отзыва</a></li>
-          <li class="menu__item">
-            <a href="#">HTML Academy</a>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">Форма отзыва</a></li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">HTML Academy</a>
           </li>
         </ul>
-        <button class="menu__esc-btn">X</button><!-- "x" временно -->
       </nav>
-      <div class="logo"><!-- та же проблема, что и с футером /--? -->
-        <a href="#">
-          <img src="http://placehold.it/105x85" alt="" class="logo__pic" width="105" height="85">
-        </a>
-      </div>
-      <div class="mobile-menu">
-        <button class="mobile-menu__btn">=</button><!-- "=" временно -->
+      <div class="page-header__top-row">
+        <div class="logo">
+          <img class="logo__pic" src="http://placehold.it/105x85" alt="" width="105" height="85">
+        </div>
       </div>
       <div class="intro">
         <img src="" alt="Welcome to the Sedona!" class="intro__pic">
       </div>
     </header>
     <main class="page-content">
-      <div class="small-sity">
-        <div class="small-sity__inner">
-        <h1 class="small-sity__title">СЕДОНА — небольшой  городок в АРИЗОНЕ,  заслуживающий большего!</h1>
-          <p class="small-sity__text">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
-        </div>
+      <div class="promo">
+        <h1 class="promo__title">СЕДОНА — небольшой  городок в АРИЗОНЕ,  заслуживающий большего!</h1>
+        <p class="promo__text">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
       </div>
-      <div class="why-better"><!-- может why-better-1? а то получается не особо независимо, или они и должны быть однотипны и изменяться вместе?  -->
-        <div class="why-better__inner">
+      <section class="why-better">
+        <div class="why-better__reason">
           <h2 class="why-better__title">Настоящий городок</h2>
-          <span class="why-better__num">- №1 -</span>
+          <span class="why-better__num">&ndash; №1 &ndash;</span>
           <p class="why-better__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
-        </div><!-- img внутри why-better, верно? -->
-        <img src="http://placehold.it/300x260" alt="" class="why-better__pic" width="300" height="260">
-      </div>
-      <section class="advantages">
-        <div class="advantages__inner">
-          <div class="advantage advantage--house"><!-- advantages__item ? -->
-            <img src="http://placehold.it/40x35" alt="" class="advantage__pic" width="40" height="35">
-            <h2 class="advantage_title">Жильё</h2>
-            <p class="advantage_text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-          </div>
-          <div class="advantage advantage--souvenir">
-            <img src="http://placehold.it/40x35" alt="" class="advantage__pic" width="40" height="35">
-            <h2 class="advantage_title">Сувениры</h2>
-            <p class="advantage_text">Не только китайского, но и местного производства!</p>
-          </div>
-          <div class="advantage advantage--food">
-            <img src="http://placehold.it/40x35" alt="" class="advantage__pic" width="40" height="35">
-            <h2 class="advantage_title">Еда</h2>
-            <p class="advantage_text">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
-          </div>
+        </div>
+        <div class="why-better__pic">
+          <img src="http://placehold.it/300x260" alt="" width="300" height="260">
         </div>
       </section>
-      <div class="why-better">
-        <div class="why-better__inner">
+      <section class="advantages">
+        <div class="advantages__item">
+          <img src="http://placehold.it/40x35" alt="" class="advantage__pic" width="40" height="35">
+          <h2 class="advantage_title">Жильё</h2>
+          <p class="advantage_text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        </div>
+        <div class="advantages__item">
+          <img src="http://placehold.it/40x35" alt="" class="advantage__pic" width="40" height="35">
+          <h2 class="advantage_title">Сувениры</h2>
+          <p class="advantage_text">Не только китайского, но и местного производства!</p>
+        </div>
+        <div class="advantages__item">
+          <img src="http://placehold.it/40x35" alt="" class="advantage__pic" width="40" height="35">
+          <h2 class="advantage_title">Еда</h2>
+          <p class="advantage_text">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+        </div>
+      </section>
+      <section class="why-better">
+        <div class="why-better__reason">
           <h2 class="why-better__title">Там есть мост дьявола</h2>
-          <span class="why-better__num">- №2 -</span>
+          <span class="why-better__num">&ndash; №2 &ndash;</span>
           <p class="why-better__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </div>
-        <img src="http://placehold.it/300x260" alt="" class="why-better__pic" width="300" height="260">
-      </div>
-      <!-- класс секции пока не указал, надо определиться что делать со всеми "why-better" -->
-      <!-- нужен доп модуль для отображения "разделителей" между №3,4 и 5 -->
-      <section class="">
+        <div class="why-better__pic">
+          <img src="http://placehold.it/300x260" alt="" width="300" height="260">
+        </div>
+      </section>
+      <section class=""><!-- вопрос пока открыт -->
         <div class="why-better">
-          <div class="why-better__inner">
-            <h2 class="why-better__title">Небольшая площадь</h2>
-            <span class="why-better__num">- №3 -</span>
-            <p class="why-better__text">ВСЕ достопримечательности находятся очень близко</p>
-          </div>
+          <h2 class="why-better__title">Небольшая площадь</h2>
+          <span class="why-better__num">&ndash; №3 &ndash;</span>
+          <p class="why-better__text">Все достопримечательности находятся очень близко</p>
         </div><div class="why-better">
-          <div class="why-better__inner">
-            <h2 class="why-better__title">Красивая дорога</h2>
-            <span class="why-better__num">- №4 -</span>
-            <p class="why-better__text">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
-          </div>
+          <h2 class="why-better__title">Красивая дорога</h2>
+          <span class="why-better__num">&ndash; №4 &ndash;</span>
+          <p class="why-better__text">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
         </div>
           <div class="why-better">
-            <div class="why-better__inner">
-              <h2 class="why-better__title">Мало туристов</h2>
-              <span class="why-better__num">- №5 -</span>
-              <p class="why-better__text">Большинство едет в гранд каньон и толпит я там</p>
-            </div>
+            <h2 class="why-better__title">Мало туристов</h2>
+            <span class="why-better__num">&ndash; №5 &ndash;</span>
+            <p class="why-better__text">Большинство едет в гранд каньон и толпит я там</p>
           </div>
       </section>
-      <div class="hotel">
-        <div class="hotel__inner">
-          <h2 class="hotel__title">Заинтересовались?</h2>
-          <p class="hotel__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <button class="hotel__btn">Найти гостиницу</button>
-        </div>
-        <img src="http://placehold.it/300x350" alt="" class="hotel__pic" width="300" height="350">
+      <div class="offer">
+        <h2 class="offer__title">Заинтересовались?</h2>
+        <p class="offer__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <button class="offer__btn">Найти гостиницу</button>
+        <div class="map"></div>
       </div>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__inner">
-        <h3 class="page-footer__title">#Visitsedona</h3>
+        <b class="page-footer__title">#Visitsedona</b>
         <div class="social">
-          <div class="social_item social_item--twitter">
-            <a href="https://twitter.com/">
-              <img src="http://placehold.it/45x48" alt="" width="45" height="48"><!-- пока так, потом спрайтом -->
-            </a>
-          </div>
-          <div class="social_item social_item--facebook">
-            <a href="https://www.facebook.com/">
-              <img src="http://placehold.it/45x48" alt="" width="45" height="48">
-            </a>
-          </div>
-          <div class="social_item social_item--youtube">
-            <a href="https://www.youtube.com/">
-              <img src="http://placehold.it/45x48" alt="" width="45" height="48">
-            </a>
-          </div>
+          <a class="social_btn social_btn--twitter" href="https://twitter.com/">
+            <img src="http://placehold.it/45x48" alt="" width="45" height="48">
+          </a>
+          <a class="social_btn social_btn--facebook" href="https://www.facebook.com/">
+            <img src="http://placehold.it/45x48" alt="" width="45" height="48">
+          </a>
+          <a class="social_btn social_btn--youtube" href="https://www.youtube.com/">
+            <img src="http://placehold.it/45x48" alt="" width="45" height="48">
+          </a>
         </div>
-        <div class="footer-logo"><!-- page-footer__logo... page-footer__logo__text? -->
-          <span class="footer-logo__text">Разработано</span>
-          <img src="http://placehold.it/25x35" alt="" class="footer-logo__pic" width="25" height="35">
+        <div class="copyright">
+          <a href="" class="copyright__link">
+            <img src="http://placehold.it/25x35" alt="" class="copyright__pic" width="25" height="35">
+          </a>
         </div>
-      </div>
     </footer>
-  </body>
+  </div>
+</body>
 </html>
