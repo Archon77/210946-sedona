@@ -1,13 +1,18 @@
 
-
+.promo {
+  margin: 0 20px;
+  text-align: center;
+  font-family: $font-family;
+  text-transform: uppercase;
+}
 
 .promo__title {
   font-size: $title-font-size;
   font-weight: $title-font-weight;
-  font-family: $title-font-family;
+  
+  
 }
 
 .promo__text {
   font-size: $text-font-size; 
-  font-family: $text-font-family;
 }

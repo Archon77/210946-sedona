@@ -3,3 +3,23 @@
 .main-menu {
   background-color: $lightblue;
 }
+
+.main-menu__list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.main-menu__item {
+  text-align: center;
+  line-height: 55px;
+  border-bottom: 1px solid grey; /*?*/
+}
+
+.main-menu__link {
+  text-transform: uppercase;
+  font-size: $title-font-size;
+  font-weight: $title-font-weight;
+  font-family: $font-family;
+  text-decoration: none;
+  color: $white;
+}

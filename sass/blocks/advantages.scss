@@ -1,17 +1,30 @@
-
+.advantages {
+  text-transform: uppercase;
+  font-family: $font-family;
+}
 
 .advantages__title {
   font-size: $title-font-size;
   font-weight: $title-font-weight;
-  font-family: $title-font-family;
+  
 }
 
 
 .advantages__text {
   font-size: $text-font-size; 
-  font-family: $text-font-family;
+}
+
+.advantages__pic {
+  fill: red;
 }
 
 .advantages__item--grey {
+  padding: 0 20px;
   background-color: $lightgrey;
+  text-align: center;
+  
+}
+
+.advantages__num {
+  
 }

@@ -2,6 +2,9 @@
 
 .why-better {
   color: $white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $font-family;
 }
 
 .why-better__reason {
@@ -11,10 +14,13 @@
 .why-better__title {
   font-size: $title-font-size;
   font-weight: $title-font-weight;
-  font-family: $title-font-family;
 }
 
 .why-better__text {
   font-size: $text-font-size; 
-  font-family: $text-font-family;
+  
+}
+
+.why-better__num {
+  font-size: $text-font-size; 
 }
