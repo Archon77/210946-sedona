@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Sedona</title>
   </head>
   <body>
@@ -10,13 +11,13 @@
       <nav class="main-menu">
         <ul class="main-menu__list">
           <li class="main-menu__item">
-            <a class="main-menu__link" href="index.html">Главная</a>
+            <a class="main-menu__link main-menu__link--active" href="index.html">Главная</a>
           </li>
           <li class="main-menu__item">
             <a class="main-menu__link" href="photo.html">Фото и видео</a>
           </li>
           <li class="main-menu__item">
-            <a class="main-menu__link main-menu__link--active" href="form.html">Форма отзыва</a></li>
+            <a class="main-menu__link" href="form.html">Форма отзыва</a></li>
           <li class="main-menu__item">
             <a class="main-menu__link" href="#">HTML Academy</a>
           </li>
@@ -24,11 +25,11 @@
       </nav>
       <div class="page-header__top-row">
         <div class="logo">
-          <img class="logo__pic" src="http://placehold.it/105x85" alt="" width="105" height="85">
+          <img class="logo__pic" src="img/logo-sedona-mobile.svg" alt="" width="101" height="84">
         </div>
       </div>
       <div class="intro">
-        <img src="" alt="Welcome to the Sedona!" class="intro__pic">
+        <img src="img/bg-back-mobile@1x.jpg" alt="Welcome to the Sedona!" class="intro__pic" width="320" height="395">
       </div>
     </header>
     <main class="page-content">
@@ -54,7 +55,7 @@
             <div class="review-form__group">
               <label class="review-form__label" for="phone">Контактный телефон<sup>*</sup>:</label>
               <input class="review-form__input" id="phone" type="tel" name="phone" placeholder="Введите телефон" required> <!-- изображение бэкграундом в стилях -->
-              <small class="review-form__error"></small>
+              <small class="review-form__error"></small><br>
               <label class="review-form__label" for="email">Электронная почта<sup>*</sup>:</label>
               <input class="review-form__input" id="email" type="email" name="email" placeholder="Введите e-mail" required>
             </div>
@@ -63,9 +64,9 @@
             <legend class="review-form__legend">Ваше общее впечатление:</legend>
             <div class="review-form__group">
               <input class="review-form__input-radio" name="impression" id="positive" type="radio" value="positive" checked>
-              <label class="review-form__label-radio" for="positive">Скорее положительное</label>
+              <label class="review-form__label-radio" for="positive">Скорее положительное</label><br>
               <input class="review-form__input-radio" name="impression" id="negative" type="radio" value="negative">
-              <label class="review-form__label-radio" for="negative">Скорее отрицательное</label>
+              <label class="review-form__label-radio" for="negative">Скорее отрицательное</label><br>
               <input class="review-form__input-radio" name="impression" id="neutral" type="radio" value="neutral">
               <label class="review-form__label-radio" for="neutral">Затрудняюсь ответить</label>
             </div>
@@ -74,20 +75,20 @@
             <legend class="review-form__legend">Посещенные достопримечательности:</legend>
             <div class="review-form__group">
               <input class="review-form__input-check" name="attraction" id="devil-bridge" type="checkbox" value="devil-bridge" checked>
-              <label class="review-form__label-check" for="devil-bridge">Мост дьявола</label>
+              <label class="review-form__label-check" for="devil-bridge">Мост дьявола</label><br>
               <input class="review-form__input-check" name="attraction" id="slide-park" type="checkbox" value="slide-park" checked>
-              <label class="review-form__label-check" for="slide-park">Слайд-парк</label>
+              <label class="review-form__label-check" for="slide-park">Слайд-парк</label><br>
               <input class="review-form__input-check" name="attraction" id="mount-bell" type="checkbox" value="mount-bell">
-              <label class="review-form__label-check" for="mount-bell">Гора-колокол</label>
+              <label class="review-form__label-check" for="mount-bell">Гора-колокол</label><br>
               <input class="review-form__input-check" name="attraction" id="red-rocks" type="checkbox" value="red-rocks" checked>
-              <label class="review-form__label-check" for="red-rocks">Красные скалы</label>
+              <label class="review-form__label-check" for="red-rocks">Красные скалы</label><br>
             </div>
           </fieldset>
           <fieldset class="comment">
             <legend class="review-form__legend">Опишите свои эмоции:</legend>
             <textarea class="comment__area" rows="5"></textarea>
+            <input class="review-form__btn"type="submit" value="Отправить отзыв">
           </fieldset>
-          <input type="submit" value="Отправить отзыв">
         </div>
       </form>
     </main>
@@ -95,19 +96,19 @@
         <b class="page-footer__tag">#Visitsedona</b>
         <div class="social">
           <a class="social_btn social_btn--twitter" href="https://twitter.com/">
-            <img src="http://placehold.it/45x48" alt="" width="45" height="48">
+            <img src="" alt="" width="45" height="48">
           </a>
           <a class="social_btn social_btn--facebook" href="https://www.facebook.com/">
-            <img src="http://placehold.it/45x48" alt="" width="45" height="48">
+            <img src="" alt="" width="45" height="48">
           </a>
           <a class="social_btn social_btn--youtube" href="https://www.youtube.com/">
-            <img src="http://placehold.it/45x48" alt="" width="45" height="48">
+            <img src="" alt="" width="45" height="48">
           </a>
         </div>
         <div class="copyright">
           Разработано
           <a href="" class="copyright__link">
-            <img src="http://placehold.it/25x35" alt="" class="copyright__pic" width="25" height="35">
+            <img src="img/logo-htmlacademy.svg" alt="" class="copyright__pic" width="25" height="35">
           </a>
         </div>
     </footer>

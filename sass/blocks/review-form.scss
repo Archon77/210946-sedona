@@ -1,0 +1,28 @@
+.review-form {
+  font-family: $font-family;
+  text-transform: uppercase;
+  background-color: lightgrey; /* для задания */
+}
+
+
+.review-form__btn {
+  color: $white;
+  background-color: $lightblue;
+  font-size: $title-font-size;
+  font-weight: $title-font-weight;
+  width: 280px;
+  line-height: 60px;
+  border: none;
+  
+  
+}
+
+.review-form__legend {
+  font-size: $title-font-size;
+  font-weight: $title-font-weight;
+  
+}
+
+.review-form__label {
+  font-size: $text-font-size; 
+}

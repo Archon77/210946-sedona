@@ -1,0 +1,20 @@
+.gallery-item {
+  border-top: 1px solid lightgrey;
+  padding: 20px;
+  font-family: $font-family;
+}
+
+.gallery-item__title {
+  font-size: $text-font-size;
+  font-weight: $title-font-weight;
+  text-transform: uppercase;
+}
+
+.gallery-item__author {
+  font-size: $text-font-size; 
+}
+
+.gallery-item__likes-count {
+  font-size: $text-font-size; 
+  font-weight: $title-font-weight;
+}

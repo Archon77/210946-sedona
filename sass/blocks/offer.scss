@@ -1,0 +1,27 @@
+.offer {
+  font-family: $font-family;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid lightgrey;
+}
+
+.offer__title {
+  font-size: $title-font-size;
+  font-weight: $title-font-weight;
+}
+
+.offer__text {
+  font-size: $text-font-size; 
+}
+
+.offer__btn {
+  color: $white;
+  background-color: $lightblue;
+  font-size: $title-font-size;
+  font-weight: $title-font-weight;
+  width: 280px;
+  line-height: 60px;
+  border: none;
+  margin-bottom: 50px;
+}

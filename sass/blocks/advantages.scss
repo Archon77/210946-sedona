@@ -1,0 +1,30 @@
+.advantages {
+  text-transform: uppercase;
+  font-family: $font-family;
+}
+
+.advantages__title {
+  font-size: $title-font-size;
+  font-weight: $title-font-weight;
+  
+}
+
+
+.advantages__text {
+  font-size: $text-font-size; 
+}
+
+.advantages__pic {
+  fill: red;
+}
+
+.advantages__item--grey {
+  padding: 0 20px;
+  background-color: $lightgrey;
+  text-align: center;
+  
+}
+
+.advantages__num {
+  
+}
