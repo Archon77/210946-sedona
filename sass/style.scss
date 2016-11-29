@@ -1,3 +1,27 @@
-body {
-  background-color: red;
-}
+@import "blocks/container.scss";
+@import "blocks/page-content.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-menu.scss";
+@import "blocks/logo.scss";
+@import "blocks/intro.scss";
+@import "blocks/promo.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+
+
+@import "blocks/why-better.scss";
+@import "blocks/advantages.scss";
+@import "blocks/map.scss";
+
+@import "blocks/video-controls.scss";
+@import "blocks/gallery-item.scss";
+@import "blocks/gallery-video.scss";
+@import "blocks/gellery.scss";
+@import "blocks/comment.scss";
+@import "blocks/offer.scss";
+
+@import "blocks/review-form.scss";
+@import "blocks/feedback-form.scss";
+
+/* @import "variables.scss"; */
