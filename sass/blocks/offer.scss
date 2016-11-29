@@ -8,3 +8,15 @@
   font-size: $text-font-size; 
   font-family: $text-font-family;
 }
+
+.offer__btn {
+  color: $white;
+  background-color: $lightblue;
+  font-size: $title-font-size;
+  font-weight: $title-font-weight;
+  font-family: $title-font-family;
+  width: 280px;
+  line-height: 60px;
+  border: none;
+  text-transform: uppercase;
+}
