@@ -1,5 +1,21 @@
 .container {
-  max-width: 320px;
-  margin: 0 auto;
+  width: 280px;
+  padding: 0 20px;
   border: 1px solid lightgrey;
+}
+
+
+@media (min-width: 768px) {
+  .container {
+    width: 640px;
+    padding: 0 64px; 
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 960px;
+    padding: 0 120px; 
+    margin: 0 auto;
+  }
 }

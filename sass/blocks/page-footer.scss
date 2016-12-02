@@ -8,3 +8,10 @@
   font-size: 21px;
   text-transform: uppercase;
 }
+
+@media (min-width: 768px) {
+  .page-footer__tag {
+    width: 33%;
+    float: left;
+  }
+}

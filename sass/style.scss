@@ -28,3 +28,21 @@
 @import "blocks/page-footer.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
+
+.body {
+  min-width: 320px;
+}
+
+@media (min-width: 768px) {
+  .body {
+    min-width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .body {
+    min-width: 1200px;
+    margin: 0 auto;
+  }
+}

@@ -19,7 +19,6 @@
 }
 
 .advantages__item--grey {
-  padding: 0 20px;
   background-color: $lightgrey;
   text-align: center;
   
@@ -27,4 +26,12 @@
 
 .advantages__num {
   
+}
+
+
+@media (min-width: 768px) {
+  .advantages__item {
+    width: 33%;
+    float: left;
+  }
 }
