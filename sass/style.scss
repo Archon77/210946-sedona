@@ -29,19 +29,25 @@
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
 
-.body {
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
   min-width: 320px;
+  margin: 0;
 }
 
 @media (min-width: 768px) {
-  .body {
+  body {
     min-width: 768px;
-    margin: 0 auto;
   }
 }
 
 @media (min-width: 1200px) {
-  .body {
+  body {
     min-width: 1200px;
     
   }
