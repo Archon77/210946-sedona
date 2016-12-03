@@ -6,7 +6,7 @@
 
 .main-menu__list {
   list-style-type: none;
-  padding: 0;
+  margin: 0;
 }
 
 .main-menu__item {
@@ -22,4 +22,19 @@
   font-family: $font-family;
   text-decoration: none;
   color: $white;
+}
+
+@media (min-width: 768px) {
+  .main-menu {
+    background-color: $white;
+  }
+  .main-menu__item {
+    display: inline;
+    
+    background-color: $white;
+    
+  }
+  .main-menu__link {
+    color: #000000;
+  }
 }

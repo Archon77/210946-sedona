@@ -8,3 +8,16 @@
   font-size: 21px;
   text-transform: uppercase;
 }
+
+@media (min-width: 768px) {
+  .page-footer__tag {
+    width: 33%;
+    float: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-footer {
+    height: 70px;
+  }
+}

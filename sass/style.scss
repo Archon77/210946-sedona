@@ -28,3 +28,27 @@
 @import "blocks/page-footer.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  body {
+    min-width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    min-width: 1200px;
+    
+  }
+}

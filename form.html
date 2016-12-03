@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Sedona</title>
   </head>
   <body>
@@ -43,9 +44,9 @@
             <legend class="review-form__legend">Представтесь:</legend>
             <div class="review-form__group">
               <label class="review-form__label" for="first_name">Имя<sup>*</sup>:</label> <!-- required кажется звездой не отмечает, так что пока так  -->
-              <input class="review-form__input" id="first_name" type="text" name="first_name" placeholder="Петр" required>
+              <input class="review-form__input" id="first_name" type="text" name="first_name" placeholder="Петр" required><br>
               <label class="review-form__label" for="last_name">Фамилия<sup>*</sup>:</label>
-              <input class="review-form__input" id="last_name" type="text" name="last_name" placeholder="Иванов" required>
+              <input class="review-form__input" id="last_name" type="text" name="last_name" placeholder="Иванов" required><br>
               <label class="review-form__label" for="patronymic">Отчество:</label>
               <input class="review-form__input" id="patronymic" type="text" name="patronymic" placeholder="Александрович">
             </div>
@@ -73,7 +74,7 @@
           </fieldset>
           <fieldset class="feedback-form">
             <legend class="review-form__legend">Посещенные достопримечательности:</legend>
-            <div class="review-form__group">
+            <div class="review-form__group review-form__group--checkbox">
               <input class="review-form__input-check" name="attraction" id="devil-bridge" type="checkbox" value="devil-bridge" checked>
               <label class="review-form__label-check" for="devil-bridge">Мост дьявола</label><br>
               <input class="review-form__input-check" name="attraction" id="slide-park" type="checkbox" value="slide-park" checked>

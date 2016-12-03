@@ -6,3 +6,10 @@
 .social img {
   background-color: $lightblue;
 }
+
+@media (min-width: 768px) {
+  .social {
+    width: 33%;
+    float: left;
+  }
+}

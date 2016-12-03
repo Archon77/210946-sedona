@@ -26,3 +26,26 @@
 .review-form__label {
   font-size: $text-font-size; 
 }
+
+@media (min-width: 768px) {
+  .review-form {
+    position: relative;
+  }
+  .review-form__label-check{
+    width: 46%; /* как вся форма сделана - полная хуйня, и мне правда стыдно :( */
+  }
+  .review-form__group--checkbox {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1200px) {
+  .review-form__group--checkbox {
+    display: flex;
+  }
+  .review-form__label-check{
+    width: auto;
+  }
+  
+}

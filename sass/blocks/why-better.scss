@@ -24,3 +24,17 @@
 .why-better__num {
   font-size: $text-font-size; 
 }
+
+
+@media (min-width: 768px) {
+  .why-better__reason {
+    width: 33%;
+    float: left;
+    height: 260px;
+  }
+  .why-better__pic {
+    width: 66%;
+    float: right;
+    background-color: lightgreen; /**/
+  }
+}
