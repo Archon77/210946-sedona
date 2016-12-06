@@ -2,8 +2,13 @@
   font-family: $font-family;
   text-transform: uppercase;
   background-color: lightgrey; /* для задания */
+  
 }
 
+.review-form__inner {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .review-form__btn {
   color: $white;

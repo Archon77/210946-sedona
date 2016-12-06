@@ -1,5 +1,7 @@
 .page-footer {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .page-footer__tag {
@@ -10,14 +12,14 @@
 }
 
 @media (min-width: 768px) {
-  .page-footer__tag {
-    width: 33%;
-    float: left;
+  .page-footer {
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
 
 @media (min-width: 1200px) {
   .page-footer {
-    height: 70px;
+    min-height: 70px;
   }
 }

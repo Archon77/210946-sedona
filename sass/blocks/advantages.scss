@@ -1,6 +1,9 @@
 .advantages {
   text-transform: uppercase;
   font-family: $font-family;
+  display: flex;
+  flex-direction: column;
+ 
 }
 
 .advantages__title {
@@ -9,6 +12,9 @@
   
 }
 
+.advantages__item {
+  
+}
 
 .advantages__text {
   font-size: $text-font-size; 
@@ -30,8 +36,12 @@
 
 
 @media (min-width: 768px) {
+  .advantages {
+    
+    flex-direction: row;
+  }
   .advantages__item {
-    width: 33%;
-    float: left;
+    width: 33.33%;
+    
   }
 }

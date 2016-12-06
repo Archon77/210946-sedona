@@ -1,3 +1,27 @@
+.logo {
+  position: relative;
+}
+
 .logo__pic {
+  position: absolute;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
   
+}
+
+@media (min-width: 1200px) {
+  .logo:before {
+    content: "";
+    position: absolute;
+    top: -70px;
+    left: -20px;
+
+    border: 70px solid transparent;
+    border-bottom-right-radius: 20%;
+    border-bottom-color: $lightblue;
+    border-right-color: $lightblue;
+    transform: rotate(45deg);
+  }
 }

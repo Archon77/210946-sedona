@@ -5,6 +5,8 @@
   text-align: center;
   text-transform: uppercase;
   font-family: $font-family;
+  display: flex;
+  flex-direction: column;
 }
 
 .why-better__reason {
@@ -26,15 +28,21 @@
 }
 
 
+.why-better__pic {
+  background-color: lightgreen; /**/
+}
+
+
 @media (min-width: 768px) {
+  .why-better {
+    flex-direction: row; 
+  }
+  
   .why-better__reason {
-    width: 33%;
-    float: left;
-    height: 260px;
+    width: 33.33%;
   }
   .why-better__pic {
-    width: 66%;
-    float: right;
-    background-color: lightgreen; /**/
+    width: 66.66%;
+    
   }
 }
