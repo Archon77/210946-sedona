@@ -2,7 +2,8 @@
   font-family: $font-family;
   text-transform: uppercase;
   text-align: center;
-  border-top: 1px solid lightgrey;
+  /*border-top: 1px solid lightgrey;*/
+  
 }
 
 .offer__title {
@@ -12,6 +13,7 @@
 
 .offer__text {
   font-size: $text-font-size; 
+  padding: 20px;
 }
 
 .offer__btn {
@@ -21,5 +23,6 @@
   font-weight: $title-font-weight;
   width: 280px;
   line-height: 60px;
+  margin-bottom: 50px;
   border: none;
 }

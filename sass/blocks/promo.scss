@@ -4,6 +4,9 @@
   text-align: center;
   font-family: $font-family;
   text-transform: uppercase;
+  min-height: 215px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .promo__title {

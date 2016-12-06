@@ -1,7 +1,9 @@
 .page-footer {
   text-align: center;
   display: flex;
+  justify-content: space-around;
   flex-direction: column;
+  min-height: 245px;
 }
 
 .page-footer__tag {

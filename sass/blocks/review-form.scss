@@ -1,7 +1,6 @@
 .review-form {
   font-family: $font-family;
   text-transform: uppercase;
-  background-color: lightgrey; /* для задания */
   
 }
 
@@ -22,14 +21,20 @@
   
 }
 
+.review-form__group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .review-form__legend {
   font-size: $title-font-size;
   font-weight: $title-font-weight;
+  text-align: center;
   
 }
 
 .review-form__label {
-  font-size: $text-font-size; 
+  font-size: $text-font-size;
 }
 
 @media (min-width: 768px) {

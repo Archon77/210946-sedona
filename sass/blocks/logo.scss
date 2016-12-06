@@ -1,14 +1,26 @@
 .logo {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  min-height: 55px;
+  
 }
-
 .logo__pic {
-  position: absolute;
+  position:absolute;
   z-index: 1;
 }
 
+
 @media (min-width: 768px) {
-  
+  .logo {
+  position:absolute;
+  top: 0;
+  left:50%;
+  transform: translateX(-50%);
+  }
+  .logo__pic {
+  position:absolute;
+  z-index: 1;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -16,10 +28,8 @@
     content: "";
     position: absolute;
     top: -70px;
-    left: -20px;
-
     border: 70px solid transparent;
-    border-bottom-right-radius: 20%;
+    border-bottom-right-radius: 10%;
     border-bottom-color: $lightblue;
     border-right-color: $lightblue;
     transform: rotate(45deg);

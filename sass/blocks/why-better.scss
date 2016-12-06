@@ -7,10 +7,18 @@
   font-family: $font-family;
   display: flex;
   flex-direction: column;
+  
 }
+
+
 
 .why-better__reason {
   background-color: $lightblue;
+  min-height: 210px;
+}
+
+.why-better__reason--reverse {
+  min-height: 190px;
 }
 
 .why-better__title {
@@ -20,7 +28,8 @@
 
 .why-better__text {
   font-size: $text-font-size; 
-  
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .why-better__num {
@@ -30,6 +39,7 @@
 
 .why-better__pic {
   background-color: lightgreen; /**/
+  display: flex;
 }
 
 
@@ -44,5 +54,8 @@
   .why-better__pic {
     width: 66.66%;
     
+  }
+  .why-better--reverse {
+    flex-direction: row-reverse; 
   }
 }

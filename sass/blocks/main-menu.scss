@@ -14,7 +14,8 @@
 
 .main-menu__item {
   text-align: center;
-  line-height: 55px;
+  line-height: 54px;
+  
   border-bottom: 1px solid grey; /*?*/
 }
 
@@ -35,7 +36,14 @@
     
     background-color: $white;
     border-bottom: none;
+    width: 20%;
     
+    
+    
+  }
+  
+  .main-menu__item:nth-child(2) {
+    margin-right: 20%;
   }
   .main-menu__list {
     flex-direction: row;
@@ -47,10 +55,13 @@
   }
 }
 
+/*
+
+у li будет ширина 20%
+у li:nth-child(2) margin-right:20%
 
 
-
-
+*/
 
 
 
