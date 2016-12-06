@@ -1,12 +1,12 @@
 
 .promo {
-  
   text-align: center;
   font-family: $font-family;
   text-transform: uppercase;
   min-height: 215px;
-  padding: 20px;
   box-sizing: border-box;
+  margin: 0 auto;
+  padding: 40px 20px 30px 20px;
 }
 
 .promo__title {
@@ -21,3 +21,20 @@
 }
 
 
+
+@media (min-width: 768px) {
+  .promo {
+    padding: 35px 135px 50px 135px;
+    margin: 0;
+  }  
+  
+  .promo__title {
+    font-size: $tablet-title-font-size;
+  }
+}
+
+@media (min-width: 1200px) {
+  .promo {
+    padding: 45px 340px 40px 340px;
+  } 
+}

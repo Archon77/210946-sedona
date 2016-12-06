@@ -5,3 +5,8 @@
   
 }
 
+@media (min-width: 768px) {
+  .comment__title {
+    font-size: $tablet-title-font-size;
+  }
+}

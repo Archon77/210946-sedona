@@ -2,12 +2,10 @@
 
 .why-better {
   color: $white;
-  text-align: center;
   text-transform: uppercase;
   font-family: $font-family;
   display: flex;
   flex-direction: column;
-  
 }
 
 
@@ -15,6 +13,12 @@
 .why-better__reason {
   background-color: $lightblue;
   min-height: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px 25px 20px;
 }
 
 .why-better__reason--reverse {
@@ -40,16 +44,19 @@
 .why-better__pic {
   background-color: lightgreen; /**/
   display: flex;
+  align-items: flex-end
 }
 
 
 @media (min-width: 768px) {
   .why-better {
     flex-direction: row; 
+    
   }
   
   .why-better__reason {
     width: 33.33%;
+    padding: 45px;
   }
   .why-better__pic {
     width: 66.66%;
@@ -58,4 +65,15 @@
   .why-better--reverse {
     flex-direction: row-reverse; 
   }
+  .why-better__title {
+    font-size: $tablet-title-font-size;
+  }
+  
+}
+
+@media (min-width: 1200px) {
+  .why-better__reason {
+    padding: 45px 60px 50px 60px;
+  }
+  
 }

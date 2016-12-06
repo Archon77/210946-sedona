@@ -26,3 +26,9 @@
   margin-bottom: 50px;
   border: none;
 }
+
+@media (min-width: 768px) {
+  .offer__title {
+    font-size: $tablet-title-font-size;
+  }
+}

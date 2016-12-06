@@ -23,6 +23,8 @@
   padding: 20px;
 }
 
+
+
 .advantages__text {
   font-size: $text-font-size;
   padding-left: 50px;
@@ -72,6 +74,14 @@
     text-align: center;
     border: none;
   }
+  .advantages__item--souvenirs {
+    order: 2;
+  }
+  
+  .advantages__title {
+    font-size: $tablet-title-font-size;
+  }
+  
   .advantages__title,
   .advantages__text {
     padding: 0; 
