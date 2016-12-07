@@ -59,6 +59,9 @@
   align-items: center;
 }
 
+.advantages__item--souvenirs br {
+    display: none;
+  }
 
 .advantages__item--grey {
   min-height: 153px; 
@@ -158,5 +161,14 @@
   }
   .advantages__item--grey .advantages__text {
     margin-top: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+   .advantages__text {
+      width: 295px;
+  }
+  .advantages__item--souvenirs br {
+    display: block;
   }
 }

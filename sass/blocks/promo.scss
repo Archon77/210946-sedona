@@ -6,7 +6,7 @@
   min-height: 225px;
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 40px 20px 27px 20px;
+  padding: 40px 20px 22px 20px;
 }
 
 .promo__title {
@@ -28,7 +28,7 @@
 @media (min-width: 768px) {
   .promo {
     min-height: 205px;
-    padding: 50px 135px 30px 135px;
+    padding: 48px 135px 30px 135px;
     margin: 0;
   }  
   
@@ -42,6 +42,6 @@
 
 @media (min-width: 1200px) {
   .promo {
-    padding: 45px 340px 40px 340px;
+    padding: 49px 340px 40px 340px;
   } 
 }

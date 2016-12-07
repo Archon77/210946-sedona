@@ -1,13 +1,15 @@
 .why-better {
   color: $white;
-  min-height: 208px;
+  
   text-transform: uppercase;
   font-family: $font-family;
   display: flex;
   flex-direction: column;
 }
 
-
+.why-better__br--reverse {
+  display: none;
+}
 
 .why-better__reason {
   background-color: $lightblue;
@@ -16,7 +18,8 @@
   align-items: center;
   text-align: center;
   box-sizing: border-box;
-  padding: 40px 20px 25px 20px;
+  padding: 40px 20px 30px 20px;
+  min-height: 208px;
 }
 
 .why-better__reason--reverse {
@@ -83,7 +86,12 @@
 
 @media (min-width: 1200px) {
   .why-better__reason {
-    padding: 45px 60px 45px 60px;
+    padding: 36px 60px 45px 60px;
+  }
+  .why-better__title {
+  }
+  .why-better__br--reverse {
+    display: block;
   }
   
 }

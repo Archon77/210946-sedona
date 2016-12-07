@@ -26,5 +26,10 @@
 }
 
 @media (min-width: 1200px) {
-  
+   .page-footer {
+    justify-content: space-between;
+  }
+   .page-footer__tag {
+     margin-left: 132px;
+  }
 }
