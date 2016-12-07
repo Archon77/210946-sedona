@@ -1,7 +1,6 @@
 .page-footer {
   text-align: center;
   display: flex;
-  justify-content: space-around;
   flex-direction: column;
   min-height: 245px;
 }
@@ -11,14 +10,18 @@
   font-family: $font-family;
   font-size: 21px;
   text-transform: uppercase;
+  margin-top: 36px;
 }
 
 @media (min-width: 768px) {
   .page-footer {
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     min-height: 120px;
+  }
+  .page-footer__tag {
+    margin-top: 45px;
   }
 }
 

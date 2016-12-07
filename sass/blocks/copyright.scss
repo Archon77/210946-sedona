@@ -5,9 +5,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
+  margin-top: 40px;
 }
 
 .copyright__link {
-  margin-left: 10px;
+  margin-left: 13px;
+}
+
+
+@media (min-width: 768px) {
+  .copyright__link {
+    margin-left: 11px;
+  }
 }

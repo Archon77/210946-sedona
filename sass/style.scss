@@ -35,8 +35,17 @@
   clear: both;
 }
 
+h2,
+span,
+p,
+b {
+  margin: 0;
+}
+
 img {
-  margin: 0 auto;
+  display: block;
+  width: 100%;
+  /* height: auto -Блок неебически разносит.*/ 
 }
 
 body {

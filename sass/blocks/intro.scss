@@ -1,4 +1,16 @@
 .intro {
-  display: flex;
-  background-color: lightgreen; /**/
+  min-height: 390px;
+  background-size: cover;
+  background: url(../../img/bg-back-mobile@1x.jpg) no-repeat;
+  background-size: auto 100%;
+  background-color: lightgreen;
+}
+
+
+@media (min-width: 768px) {
+  .intro {
+    min-height: 520px;
+    background-size: 100% auto;
+  }
+  
 }

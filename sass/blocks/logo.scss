@@ -1,6 +1,7 @@
 .logo {
   display: flex;
   justify-content: center;
+  width: 100%;
   min-height: 55px;
   
 }
@@ -24,14 +25,5 @@
 }
 
 @media (min-width: 1200px) {
-  .logo:before {
-    content: "";
-    position: absolute;
-    top: -70px;
-    border: 70px solid transparent;
-    border-bottom-right-radius: 10%;
-    border-bottom-color: $lightblue;
-    border-right-color: $lightblue;
-    transform: rotate(45deg);
-  }
+  
 }

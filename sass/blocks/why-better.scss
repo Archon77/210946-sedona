@@ -1,7 +1,6 @@
-
-
 .why-better {
   color: $white;
+  min-height: 208px;
   text-transform: uppercase;
   font-family: $font-family;
   display: flex;
@@ -12,10 +11,8 @@
 
 .why-better__reason {
   background-color: $lightblue;
-  min-height: 210px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
   box-sizing: border-box;
@@ -24,49 +21,62 @@
 
 .why-better__reason--reverse {
   min-height: 190px;
+  padding-top: 25px;
 }
 
 .why-better__title {
   font-size: $title-font-size;
   font-weight: $title-font-weight;
-}
-
-.why-better__text {
-  font-size: $text-font-size; 
-  box-sizing: border-box;
+  margin-top: 15px;
 }
 
 .why-better__num {
   font-size: $text-font-size; 
+  
+  margin-top: 13px;
 }
+
+
+.why-better__text {
+  font-size: $text-font-size; 
+  box-sizing: border-box;
+  
+  margin-top: 20px;
+}
+
+
 
 
 .why-better__pic {
   background-color: lightgreen; /**/
-  display: flex;
-  align-items: flex-end
 }
+
 
 
 @media (min-width: 768px) {
   .why-better {
     flex-direction: row; 
-    
+    min-height: 256px;
   }
   
   .why-better__reason {
     width: 33.33%;
-    padding: 45px;
+    padding: 28px 45px 45px 45px;
   }
   .why-better__pic {
     width: 66.66%;
     
+  }
+  .why-better__text {
+    margin-top: 22px;
+    line-height: 20px;
   }
   .why-better--reverse {
     flex-direction: row-reverse; 
   }
   .why-better__title {
     font-size: $tablet-title-font-size;
+    width: 151px;
   }
   
 }
