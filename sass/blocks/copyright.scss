@@ -2,5 +2,10 @@
   text-transform: uppercase;
   font-size: $text-font-size; 
   font-family: $font-family;
+  display: flex;
+  align-items: center;
 }
 
+.copyright__link {
+  margin-left: 10px;
+}

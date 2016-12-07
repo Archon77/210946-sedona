@@ -6,6 +6,10 @@
   
 }
 
+.offer br {
+  display: none;
+}
+  
 .offer__title {
   font-size: $title-font-size;
   font-weight: $title-font-weight;
@@ -30,5 +34,8 @@
 @media (min-width: 768px) {
   .offer__title {
     font-size: $tablet-title-font-size;
+  }
+  .offer br {
+  display: inline;
   }
 }
