@@ -1,6 +1,20 @@
-.gellery {
+.gallery {
   display: flex;
   flex-wrap: wrap;
   
+  margin: 20px;
 }
 
+
+
+@media (min-width: 768px) {
+  .gallery {
+    margin: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .gallery {
+    margin: 40px;
+  }
+}

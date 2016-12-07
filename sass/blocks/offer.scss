@@ -2,9 +2,22 @@
   font-family: $font-family;
   text-transform: uppercase;
   text-align: center;
-  /*border-top: 1px solid lightgrey;*/
-  
+  padding: 20px;
+  border-top: 1px solid #d6d6d6;
+  position: relative;
 }
+
+/*
+.offer:before {
+  content: '';
+  width: 100vw;
+  height: 1px;
+  top: 0;
+  left: 0px;
+  position: absolute;
+  background-color: #d6d6d6;
+}*/
+
 
 .offer br {
   display: none;
@@ -17,7 +30,6 @@
 
 .offer__text {
   font-size: $text-font-size; 
-  padding: 20px;
 }
 
 .offer__btn {
@@ -32,8 +44,12 @@
 }
 
 @media (min-width: 768px) {
+  .offer {
+    border: none;
+  }
+  
   .offer__title {
-    font-size: $tablet-title-font-size;
+    font-size: $desktop-title-font-size;
   }
   .offer br {
   display: inline;

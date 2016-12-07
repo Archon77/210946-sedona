@@ -3,7 +3,9 @@
   font-size: $text-font-size; 
   font-family: $font-family;
   display: flex;
+  justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
 .copyright__link {
