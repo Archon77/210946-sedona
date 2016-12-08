@@ -11,6 +11,9 @@
   display: none;
 }
 
+
+
+
 .why-better__reason {
   background-color: $lightblue;
   display: flex;
@@ -19,11 +22,11 @@
   text-align: center;
   box-sizing: border-box;
   padding: 40px 20px 30px 20px;
-  min-height: 208px;
+  min-height: 207px;
 }
 
 .why-better__reason--reverse {
-  min-height: 190px;
+  min-height: 191px;
   padding-top: 25px;
 }
 
@@ -44,14 +47,25 @@
   font-size: $text-font-size; 
   box-sizing: border-box;
   
-  margin-top: 20px;
+  margin-top: 19px;
 }
 
 
 
 
 .why-better__pic {
+  background: url(../img/photo-city@1x.jpg) no-repeat;
   background-color: lightgreen; /**/
+  background-size: auto 100%;
+  min-height: 260px;
+}
+
+.why-better--pic-reverse {
+  
+  background: url(../img/photo-4-mobile@1x.jpg) no-repeat;
+  background-color: lightgreen; /**/
+  background-size: auto 100%;
+  min-height: 260px;
 }
 
 
@@ -81,7 +95,15 @@
     font-size: $tablet-title-font-size;
     width: 151px;
   }
-  
+  .why-better__pic {
+    background-size: 100% auto;
+    min-height: 255px;
+  }
+    
+  .why-better--pic-reverse {
+    background-size: 100% auto;
+    min-height: 255px;
+  }
 }
 
 @media (min-width: 1200px) {

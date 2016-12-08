@@ -1,13 +1,12 @@
 .advantages {
-  min-height: 420px;
+  min-height: 416px;
   text-transform: uppercase;
   font-family: $font-family;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   flex-wrap: wrap;
   box-sizing: border-box;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 
@@ -19,8 +18,8 @@
   flex-direction: row;
   flex-wrap: wrap;
   text-align: left;
-  margin-bottom: 15px;
-  
+  box-sizing: border-box;
+  margin-top: 21px;
 }
 
 
@@ -37,14 +36,13 @@
 .advantages__title {
   font-size: $title-font-size;
   font-weight: $title-font-weight;
-  margin: 13px 1px 0 10px;
+  margin: 13px 0 0 10px;
 }
 
 .advantages__text {
   font-size: $text-font-size;
-  width: 100%;
-  margin: 15px 0 0 50px;
-  line-height: 22px;
+  width: 211px;
+  margin: 17px 0 0 50px;
 }
 
 .advantages--grey {
@@ -64,7 +62,8 @@
   }
 
 .advantages__item--grey {
-  min-height: 153px; 
+  margin-top: 0;
+  min-height: 167px; 
   flex-direction: column;
   justify-content: flex-start;
   position: relative;
@@ -83,8 +82,9 @@
 }
 
 .advantages__item--grey .advantages__text {
-  margin-top: 15px;
+  margin-top: 20px;
   margin-left: 0;
+  width: 247px;
 }
 
 .advantages__text-hyphen {
@@ -107,7 +107,7 @@
 @media (min-width: 768px) {
   .advantages {
     flex-direction: row;
-    min-height: 330px;
+    min-height: 329px;
     padding: 0;
   }
   .advantages--grey {
@@ -122,14 +122,13 @@
     text-align: center;
     border: none;
     box-sizing: border-box;
-    padding: 57px 0 0 0;
+    margin-top: 55px;
   }
   .advantages__item--souvenirs {
     order: 2;
   }
   .advantages__item--grey {
-    padding-top: 16px;
-    
+    margin-top: 16px;
   }
   .advantages__item--grey:before {
     display: none;
@@ -156,11 +155,13 @@
   
   .advantages__text {
     margin-left: 0; 
-    margin-top: 20px;
+    margin-top: 22px;
+    line-height: 20px;
     width: 162px;
   }
   .advantages__item--grey .advantages__text {
-    margin-top: 20px;
+    margin-top: 21px;
+    width: 155px;
   }
 }
 
@@ -170,5 +171,8 @@
   }
   .advantages__item--souvenirs br {
     display: block;
+  }
+  .advantages__item--grey .advantages__text {
+    width: 260px;
   }
 }
