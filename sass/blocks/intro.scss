@@ -7,11 +7,18 @@
   background-color: lightgreen;
 }
 
+.intro--small {
+  min-height: 157px;
+}
+
 
 @media (min-width: 768px) {
   .intro {
     min-height: 520px;
     background-size: 100% auto;
+  }
+  .intro--small {
+  min-height: 290px;
   }
   
 }

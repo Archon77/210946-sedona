@@ -35,9 +35,11 @@
     background-color: $white;
     border-bottom: none;
     width: 20%;
+    line-height: 55.5px;
   }
   .main-menu__item:nth-child(2) {
     margin-right: 20%;
+    
   }
   .main-menu__list {
     flex-direction: row;
