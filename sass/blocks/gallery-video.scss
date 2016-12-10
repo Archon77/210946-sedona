@@ -22,3 +22,15 @@
   
   
 }
+
+@media (min-width: 1200px) {
+  .gallery-video__preview {
+    min-height: 500px;
+    margin-bottom: 85px; /* для футера!! */
+  }
+  .gallery-video__preview img {
+    width: 798px;
+  }
+  
+  
+}

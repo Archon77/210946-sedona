@@ -148,6 +148,8 @@
 @media (min-width: 1200px) {
   .gallery-item {
     width: 33.333%;
+    position: relative;
+    min-height: 265px;
   }
   
   .gallery-item__footer {
@@ -155,9 +157,15 @@
     position: absolute;
     padding: 0;
     color: $white;
-    bottom: 5px;
+    padding: 0 20px;
     left: 0;
+    bottom: 0;
     width: 100%;
     z-index: 1;
+    box-sizing: border-box;
+  }
+  
+  .gallery-item:first-of-type {
+    min-height: 397px;
   }
 }
