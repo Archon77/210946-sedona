@@ -74,9 +74,11 @@
     width: 50%;
     border: none;
     padding: 0;
-    min-height: 480px;
+    min-height: 347px;
+    
   }
   .gallery-item:first-of-type {
+    min-height: 480px;
     width: 100%;
   }
   /*.gallery-item:before {
@@ -85,24 +87,56 @@
   .gallery-item:first-of-type .gallery-item__link {
     min-height: 400px;
   }
-  .gallery-item:first-of-type .gallery-item__footer {
+  .gallery-item__footer {
     min-height: 80px;
+    background-color: #eaeaea;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-left: 20px;
+    padding-right: 20px;
   }
-  
+  .gallery-item__title {
+    margin-top: 0;
+  }
+  .gallery-item__author {
+    margin-top: 0;
+  }
+  .gallery-item__text {
+    margin: 0;
+  }
+  .gallery-item__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 42px;
+    margin: auto 0;
+  }
   .gallery-item__link {
     margin-top: 0;
   }
-    
-  .gallery-item__footer {
-    background-color: #eaeaea;
-    flex-direction: row;
+  .gallery-item__link img {
+   height: 267px;
+  }
+  .gallery-item-likes {
+    margin-top: 0;
+    display: flex;
     align-items: center;
-    padding-left: 20px;
-    padding-right: 30px;
+    min-width: 65px;
+    
+  }
+  .gallery-item__likes-count {
+    margin: 0 0 0 11px;
   }
   
+  
+  .gallery-item__likes-icon {
+    margin-left: 0;
+  }
+  
+  
+  
   .gallery-item-likes {
-    margin-left: auto;
   }
   
   .gallery-item__footer--lighter {

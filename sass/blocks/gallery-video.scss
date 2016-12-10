@@ -2,8 +2,23 @@
   display: flex;
   min-height: 255px;
   margin-bottom: 50px; /* для футера!! */
+  
 }
 
 .gallery-video__preview img {
   margin: 0 auto;
+}
+
+
+@media (min-width: 768px) {
+  .gallery-video__preview {
+    min-height: 500px;
+    margin-bottom: 40px; /* для футера!! */
+  }
+  .gallery-video__preview img {
+    width: 648px;
+    height: 100%;
+  }
+  
+  
 }

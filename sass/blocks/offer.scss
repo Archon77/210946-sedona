@@ -58,15 +58,16 @@
 @media (min-width: 768px) {
   .offer {
     border: none;
-    min-height: 317px;
+    min-height: 244px;
   }
   
   .offer__title {
     font-size: $desktop-title-font-size;
-    margin-top: 29px;
+    margin-top: 58px;
   }
   .offer__text {
-    margin-top: 24px;
+    margin-top: 25px;
+    width: 414px;
   }
   .offer__btn {
     margin-top: 41px;
