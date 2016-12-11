@@ -33,36 +33,42 @@
       </div>
     </header>
     <main class="page-content">
-      <div class="promo">
+      <div class="promo promo--form">
         <h1 class="promo__title">Оставьте свой отзыв</h1>
-        <p class="promo__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <p class="promo__text promo__text--form">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
       <form class="review-form" action="https://echo.htmlacademy.ru/" method="get">
         <div class="review-form__inner">
           <fieldset class="feedback-form">
             <legend class="review-form__legend">Представтесь:</legend>
             <div class="review-form__group">
-              <label class="review-form__label" for="first_name">Имя<sup>*</sup>:</label> <!-- required кажется звездой не отмечает, так что пока так  -->
-              <input class="review-form__input" id="first_name" type="text" name="first_name" placeholder="Петр" required>
-              <label class="review-form__label" for="last_name">Фамилия<sup>*</sup>:</label><br>
-              <input class="review-form__input" id="last_name" type="text" name="last_name" placeholder="Иванов" required><br>
-              <label class="review-form__label" for="patronymic">Отчество:</label>
-              <input class="review-form__input" id="patronymic" type="text" name="patronymic" placeholder="Александрович">
+              <div class="review-form__field">
+                <label class="review-form__label" for="first_name">Имя<sup>*</sup>:</label> <!-- required кажется звездой не отмечает, так что пока так  -->
+                <input class="review-form__input" id="first_name" type="text" name="first_name" placeholder="Петр" required>
+              </div>
+              <div class="review-form__field">
+                <label class="review-form__label" for="last_name">Фамилия<sup>*</sup>:</label>
+                <input class="review-form__input" id="last_name" type="text" name="last_name" placeholder="Иванов" required>
+              </div>
+              <div class="review-form__field">
+                <label class="review-form__label" for="patronymic">Отчество:</label>
+                <input class="review-form__input" id="patronymic" type="text" name="patronymic" placeholder="Александрович">
+              </div>
             </div>
           </fieldset>
           <fieldset class="feedback-form">
             <legend class="review-form__legend">Контактная информация:</legend>
-            <div class="review-form__group">
+            <div class="review-form__group review-form__group--contact">
               <label class="review-form__label" for="phone">Контактный телефон<sup>*</sup>:</label>
               <input class="review-form__input" id="phone" type="tel" name="phone" placeholder="Введите телефон" required> <!-- изображение бэкграундом в стилях -->
-              <small class="review-form__error"></small><br>
+              <small class="review-form__error"></small>
               <label class="review-form__label" for="email">Электронная почта<sup>*</sup>:</label>
               <input class="review-form__input" id="email" type="email" name="email" placeholder="Введите e-mail" required>
             </div>
           </fieldset>
           <fieldset class="feedback-form">
             <legend class="review-form__legend">Ваше общее впечатление:</legend>
-            <div class="review-form__group">
+            <div class="review-form__group review-form__group--radio">
               <input class="review-form__input-radio" name="impression" id="positive" type="radio" value="positive" checked>
               <label class="review-form__label-radio" for="positive">Скорее положительное</label><br>
               <input class="review-form__input-radio" name="impression" id="negative" type="radio" value="negative">
@@ -86,7 +92,7 @@
           </fieldset>
           <fieldset class="comment">
             <legend class="review-form__legend">Опишите свои эмоции:</legend>
-            <textarea class="comment__area" rows="5"></textarea>
+            <textarea class="comment__area" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
             <input class="review-form__btn"type="submit" value="Отправить отзыв">
           </fieldset>
         </div>

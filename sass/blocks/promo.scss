@@ -12,7 +12,9 @@
 .promo--photo {
   min-height: 190px;
 }
-
+.promo--form {
+  min-height: 204px;
+}
 .promo__title {
   font-size: $title-font-size;
   font-weight: $title-font-weight;
@@ -24,13 +26,17 @@
 .promo__text {
   font-size: $text-font-size; 
   margin: 27px 0 0 0;
-  line-height: 26px;
+  /*line-height: 26px;*/
 }
 
 .promo__text--photo {
   line-height: 23px;
 }
   
+.promo__text--form {
+  line-height: 23px;
+}
+
 .promo__text br {
   display: none; 
 }
