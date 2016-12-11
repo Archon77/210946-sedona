@@ -51,16 +51,29 @@
     min-height: 248px;
     padding: 75px 135px 30px 135px;
   }
+  .promo--form { 
+    min-height: 234px;
+    padding: 75px 135px 30px 135px;
+  }
+  
   .promo__title {
     font-size: $tablet-title-font-size;
   }
   .promo__title--photo {
     font-size: $desktop-title-font-size;
   }
+  .promo__title--form {
+    font-size: $desktop-title-font-size;
+  }
   .promo__text--photo {
     margin: 31px auto 0 auto;
     width: 428px;
   }
+  .promo__text--form {
+    margin: 31px auto 0 auto;
+    width: 440px;
+  }
+  
 }
 
 @media (min-width: 1200px) {

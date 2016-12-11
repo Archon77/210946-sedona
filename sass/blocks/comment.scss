@@ -12,6 +12,7 @@
 
 .comment:before {
   content :'';
+  display: block;
   position: absolute;
   min-width: 320px;
   height: 1px;
@@ -22,7 +23,8 @@
 
 .comment__area {
   width: 100%;
-  padding: 20px;
+  min-height: 160px;
+  padding: 17px 20px 0 20px;
   box-sizing: border-box;
   background-color: $lightgrey;
   border: none;
@@ -31,9 +33,15 @@
   font-size: $title-font-size;
 }
 
+.comment legend {
+  margin-bottom: 0px; 
+}
 
 @media (min-width: 768px) {
   .comment__title {
     font-size: $tablet-title-font-size;
+  }
+  .comment:before {
+    display: none; 
   }
 }

@@ -12,7 +12,7 @@
   position: absolute;
   min-width: 320px;
   height: 1px;
-  background-color: $lightgrey;
+  background-color: #f2f2f2;
   top: 0;
   left: 0;
 }
@@ -61,7 +61,7 @@ input[type="checkbox"]:checked + label::after {
   height: 54px;
   width: 54px;
   margin: 0 5px 0 0;
-  background: url(../../img/icon-tick.svg) no-repeat;
+  background: url(../img/icon-tick.svg) no-repeat;
   background-size: 25px 25px;
 }
 
@@ -104,7 +104,12 @@ input[type="radio"]:checked + label::after {
     max-width: 49%;
     order: -1;
   }
-  
+  .feedback-form:before {
+    display: none; 
+  }
+  .feedback-form:first-of-type {
+    border-left: 2px solid #f2f2f2;
+  }
   
 }
 

@@ -135,9 +135,14 @@
   background-color: $lightblue;
   font-size: $title-font-size;
   font-weight: $title-font-weight;
-  width: 280px;
-  line-height: 60px;
+  width: 100%;
+  text-transform: uppercase;
+  line-height: 57px;
+  margin-top: 50px;
+  margin-bottom: 19px;
   border: none;
+  padding: 0;
+  box-sizing: border-box;
   
   
 }
@@ -160,6 +165,23 @@
   .review-form__group--checkbox {
     display: flex;
     flex-wrap: wrap;
+  }
+  .review-form__legend {
+    font-size: $tablet-title-font-size;
+    
+    width: 100%;
+    text-align: left;
+    margin-left: 40px;
+  }
+  .review-form__legend:before {
+    height: 18px;
+  }
+  .review-form__group--radio {
+    margin-top: 35px;
+    margin-left: 35px;
+  }
+  .review-form__error {
+    display: none; /*  переделать по человечески  */
   }
 }
 
