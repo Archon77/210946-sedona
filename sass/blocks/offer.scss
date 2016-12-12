@@ -28,15 +28,15 @@
 }
   
 .offer__title {
-  font-size: $title-font-size;
+  font-size: $tablet-title-font-size;
   font-weight: $title-font-weight;
   display: block;
-  margin-top: 34px;
+  margin-top: 30px;
 }
 
 .offer__text {
   font-size: $text-font-size; 
-  margin-top: 28px;
+  margin-top: 17px; /* 28 */
   line-height: 24px;
   width: 240px;
 }
@@ -48,7 +48,7 @@
   font-weight: $title-font-weight;
   width: 280px;
   line-height: 57px;
-  margin-top: 33px;
+  margin-top: 12px;
   border: none;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -63,14 +63,14 @@
   
   .offer__title {
     font-size: $desktop-title-font-size;
-    margin-top: 58px;
+    margin-top: 45px;
   }
   .offer__text {
     margin-top: 25px;
     width: 414px;
   }
   .offer__btn {
-    margin-top: 41px;
+    margin-top: 20px;
     line-height: 56px;
     width: 457px;
   }
@@ -82,12 +82,12 @@
 
 @media (min-width: 1200px) {
   .offer__btn {
-    margin-top: 45px;
+    margin-top: 23px;
   }
   .offer {
     min-height: 247px;
   }
   .offer__title {
-    margin-top: 63px;
+    margin-top: 49px;
   }
 }

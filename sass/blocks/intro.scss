@@ -18,17 +18,16 @@
     background-size: 100% auto;
   }
   .intro--small {
-  min-height: 290px;
+    min-height: 290px;
   }
   
 }
 
 
 @media (min-width: 1200px) {
-  .intro {
+  .intro--small {
     min-height: 303px;
   }
-  
 
   
   

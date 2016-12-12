@@ -1,6 +1,7 @@
 .map {
   min-height: 350px;
   width: 100%;
+  margin-top: 50px;
   background: url(../img/bg-map-mobile@1x.jpg) no-repeat;
   background-size: cover;
   /* no-repeat cover;*/
@@ -9,5 +10,12 @@
 @media (min-width: 768px) {
   .map {
     min-height: 351px;
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .map {
+    margin-top: 67px;
   }
 }

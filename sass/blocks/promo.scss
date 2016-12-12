@@ -78,6 +78,12 @@
 
 @media (min-width: 1200px) {
   .promo {
-    padding: 112px 340px 71px 340px;
-  } 
+    padding: 50px 340px 55px 340px;
+  }
+  .promo--photo {
+    padding: 112px 340px 72px 340px;
+  }
+  .promo__text {
+    margin-top: 31px;
+  }
 }
