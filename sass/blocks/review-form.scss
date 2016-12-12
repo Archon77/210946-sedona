@@ -162,16 +162,11 @@
   .review-form__label-check{
     width: 46%; /* как вся форма сделана - полная хуйня, и мне правда стыдно :( */
   }
-  .review-form__group--checkbox {
-    display: flex;
-    flex-wrap: wrap;
-  }
   .review-form__legend {
     font-size: $tablet-title-font-size;
-    
-    width: 100%;
+    box-sizing: border-box;
+    width: 300px;
     text-align: left;
-    margin-left: 40px;
   }
   .review-form__legend:before {
     height: 18px;
@@ -182,6 +177,15 @@
   }
   .review-form__error {
     display: none; /*  переделать по человечески  */
+  }
+  .review-form__legend--contact {
+    padding: 0;
+    text-align: center;
+  }
+  
+  .review-form__legend--checkbox {
+    padding: 0;
+    text-align: center;
   }
 }
 

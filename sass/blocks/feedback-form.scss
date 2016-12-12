@@ -95,10 +95,11 @@ input[type="radio"]:checked + label::after {
   .feedback-form {
     min-height: 135px;
     box-sizing: border-box;
+    padding: 0 60px;
   }
   .feedback-form:nth-of-type(1) {
-   max-width: 49%;
-    
+    max-width: 49%;
+    min-height: 358px; /* пока всё криво - выставляет контакт. информацию  */
   } 
   .feedback-form:nth-of-type(3) {
     max-width: 49%;
@@ -107,6 +108,12 @@ input[type="radio"]:checked + label::after {
   .feedback-form:before {
     display: none; 
   }
+  .feedback-form:nth-of-type(2) {
+    border-top: 2px solid #f2f2f2;
+  } 
+  .feedback-form:nth-of-type(4) {
+    border-top: 2px solid #f2f2f2;
+  } 
   .feedback-form:first-of-type {
     border-left: 2px solid #f2f2f2;
   }
