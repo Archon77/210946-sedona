@@ -1,9 +1,7 @@
 .review-form {
   font-family: $font-family;
-}
-.review-form__inner {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 .review-form__legend:before {   /* маргины схлапываются - сделал пока так */
   content: '';

@@ -1,8 +1,9 @@
 .feedback-form {
-  width: 100%;
   border: none;
   position: relative;
   margin: 0;
+  width: 100%;
+  box-sizing: border-box;
   padding: 0 20px 0;
   /*border-top: 1px solid #dbdbdb;*/
 }
@@ -102,6 +103,7 @@ input[type="radio"]:checked + label::after {
   }
   .feedback-form:nth-of-type(2) {
     border-top: 2px solid #f2f2f2;
+    width: 100%;
   } 
   .feedback-form:nth-of-type(4) {
     border-top: 2px solid #f2f2f2;
