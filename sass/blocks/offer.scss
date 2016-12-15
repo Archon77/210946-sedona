@@ -2,16 +2,51 @@
   font-family: $font-family;
   text-transform: uppercase;
   text-align: center;
-  border-top: 1px solid lightgrey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 25px;
+  border-top: 1px solid #d6d6d6;
+  box-sizing: border-box;
 }
 
+/*
+.offer:before {
+  content: '';
+  width: 100vw;
+  height: 1px;
+  top: 0;
+  left: 0px;
+  position: absolute;
+  background-color: #d6d6d6;
+}*/
+
+
+.offer br {
+  display: none;
+}
+  
 .offer__title {
-  font-size: $title-font-size;
+  font-size: $tablet-title-font-size;
   font-weight: $title-font-weight;
+  display: block;
+  margin-top: 30px;
+}
+.offer--gallery .offer__title {
+  font-size: $title-font-size;
+  margin-top: 33px;
+}
+.offer--gallery .offer__text {
+  margin-top: 30px;
+}
+.offer--gallery {
+  padding: 0 35px 34px;
 }
 
 .offer__text {
   font-size: $text-font-size; 
+  margin-top: 17px; /* 28 */
+  line-height: 24px;
 }
 
 .offer__btn {
@@ -20,6 +55,63 @@
   font-size: $title-font-size;
   font-weight: $title-font-weight;
   width: 280px;
-  line-height: 60px;
+  line-height: 57px;
+  margin-top: 36px;
   border: none;
+  text-transform: uppercase;
+  padding: 0;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .offer {
+    border: none;
+    padding: 0 188px;
+  }
+  
+  .offer__title {
+    font-size: $desktop-title-font-size;
+    margin-top: 77px;
+  }
+  .offer__text {
+    margin-top: 25px;
+  }
+  .offer__btn {
+    margin-top: 42px;
+    line-height: 56px;
+    width: 457px;
+  }
+  .offer br {
+  display: inline;
+  }
+  .offer--gallery {
+    padding: 0 170px 73px;
+  }
+  .offer--gallery .offer__title {
+    font-size: $desktop-title-font-size;
+    margin-top: 59px;
+  }
+  .offer--gallery .offer__text {
+    margin-top: 25px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .offer {
+    padding: 0 401px;
+  }
+  .offer--gallery {
+    padding: 0 380px 71px;
+  }
+  .offer__title {
+    margin-top: 49px;
+  }
+  .offer--gallery .offer__title {
+    font-size: $desktop-title-font-size;
+    margin-top: 63px;
+  }
+  .offer__btn {
+    margin-top: 48px;
+  }
 }

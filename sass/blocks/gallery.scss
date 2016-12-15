@@ -1,4 +1,19 @@
-.gellery {
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
   
 }
 
+
+
+@media (min-width: 768px) {
+  .gallery {
+    margin: 0 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .gallery {
+    margin: 0;
+  }
+}

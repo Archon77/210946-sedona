@@ -1,3 +1,33 @@
 .intro {
-  background-color: lightgreen; /**/
+  min-height: 390px;
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #94c0db;
+}
+
+.intro--small {
+  min-height: 157px;
+}
+
+
+@media (min-width: 768px) {
+  .intro {
+    min-height: 520px;
+    background-size: 100% auto;
+  }
+  .intro--small {
+    min-height: 290px;
+  }
+  
+}
+
+
+@media (min-width: 1200px) {
+  .intro--small {
+    min-height: 303px;
+  }
+
+  
+  
 }

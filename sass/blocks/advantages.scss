@@ -1,37 +1,180 @@
 .advantages {
   text-transform: uppercase;
   font-family: $font-family;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 0 29px 42px;
+}
+
+
+
+
+
+.advantages__item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: left;
+  box-sizing: border-box;
+  margin-top: 21px;
+}
+
+
+.br-attraction {
+  display: none;
+}
+
+
+.advantages__pic {
+  width: 40px;
+  height: 35px;
+  margin-top: 4px;
+  /*background-color: rgba(129,179,210,0.5);*/
 }
 
 .advantages__title {
   font-size: $title-font-size;
   font-weight: $title-font-weight;
-  
+  margin: 13px 0 0 10px;
+  width: 77%; /* для переноса advantages__text на мобилке */
 }
-
 
 .advantages__text {
-  font-size: $text-font-size; 
+  font-size: $text-font-size;
+  margin: 17px 0 0 50px;
 }
 
-.advantages__pic {
-  fill: red;
+.advantages--grey {
+  background-color: $lightgrey;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .advantages__item--grey {
-  background-color: $lightgrey;
+  margin: 0;
+  padding-bottom: 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
   text-align: center;
-  
+  box-sizing: border-box;
 }
 
-.advantages__num {
+.advantages__item--grey .advantages__title {
+  margin-top: 28px;
+  margin-left: 0;
   
 }
+.advantages__item--grey .advantages__num {
+  margin-top: 10px;
+  margin-left: 0;
+}
 
+.advantages__item--grey .advantages__text {
+  margin-top: 20px;
+  margin-left: 0;
+  /*width: 247px;*/
+}
+
+.advantages__text-hyphen {
+    display: none;
+  }
+
+.advantages__item--grey:before {
+  content: '';
+  width: 87.5%;
+  height: 1px;
+  top: 0;
+  left: 6.25%;
+  position: absolute;
+  background-color: #d6d6d6;
+}
+.advantages__item--grey:first-of-type:before {
+  display: none;
+}
 
 @media (min-width: 768px) {
+  .advantages {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+  }
+  .advantages--grey {
+  }
+  
+  .br-attraction {
+    display: inline;
+  }
   .advantages__item {
-    width: 33%;
-    float: left;
+    width: 33.33%;
+    display: flex;
+    padding: 0 47px 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: none;
+    box-sizing: border-box;
+    margin-top: 55px;
+    margin-bottom: 42px;
+  }
+  .advantages__item--souvenirs {
+    order: 2;
+  }
+  .advantages__item--grey {
+    margin-top: 16px;
+    margin-bottom: 0px;
+    padding: 0 50px 20px;
+  }
+  .advantages__item--grey:before {
+    display: none;
+  }
+  
+  .advantages__title {
+    font-size: $tablet-title-font-size;
+    margin-top: 27px;
+    margin-left: 0;   /* не работает :( */
+   /* width: 140px;*/
+  }
+  .advantages__pic {
+    width: 75px;
+    height: 75px;
+    margin-top: 3px;
+  }
+  
+  .advantages__text {
+    margin-left: 0; 
+    margin-top: 22px;
+    line-height: 20px;
+  }
+  .advantages__item--grey .advantages__text {
+    margin-top: 21px;
+    
+    /*width: 155px;*/
+  }
+  .br-attraction {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+   .advantages__text {
+  }
+  .advantages__item--souvenirs br {
+    display: block;
+  }
+  .advantages__item {
+    padding: 0 74px 20px;
+    margin-bottom: 63px;
+  }
+  .advantages__item--grey {
+    padding: 0 60px 4px;
+  }
+  .advantages__item--grey .advantages__title {
+    width: 150px;  /* и тут х3 как ограничить */
+  }
+  .br-attraction {
   }
 }

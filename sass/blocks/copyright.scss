@@ -2,5 +2,25 @@
   text-transform: uppercase;
   font-size: $text-font-size; 
   font-family: $font-family;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
 }
 
+.copyright__link {
+  margin-left: 13px;
+}
+
+
+@media (min-width: 768px) {
+  .copyright {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: 1200px) {
+   .copyright {
+     
+  }
+}

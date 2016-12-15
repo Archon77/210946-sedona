@@ -1,15 +1,33 @@
 
 
 .social {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
 }
 
-.social img {
+.social_btn {
+  width: 45px;
+  height: 48px;
   background-color: $lightblue;
+  margin-right: 7px;
+}
+
+.social_btn--youtube {
+  margin-right: 0;
 }
 
 @media (min-width: 768px) {
   .social {
-    width: 33%;
-    float: left;
+    margin-top: 0;
+  }
+  .social_btn {
+    margin-right: 8px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .social {
+    margin-right: 89px;
   }
 }
