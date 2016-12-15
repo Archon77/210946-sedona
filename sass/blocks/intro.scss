@@ -1,10 +1,9 @@
 .intro {
   min-height: 390px;
+  background-image: url(../img/bg-back-mobile@1x.jpg);
   background-size: cover;
-  background-size: auto 100%;
-  
-  background: url(../img/bg-back-mobile@1x.jpg) no-repeat;
-  background-color: lightgreen;
+  background-repeat: no-repeat;
+  background-color: #94c0db;
 }
 
 .intro--small {

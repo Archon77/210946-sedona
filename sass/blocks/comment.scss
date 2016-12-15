@@ -10,21 +10,12 @@
 }
 
 
-.comment:before {
-  content :'';
-  display: block;
-  position: absolute;
-  min-width: 320px;
-  height: 1px;
-  background-color: $lightgrey;
-  top: 0;
-  left: -2px;
-}
+
 
 .comment__area {
   width: 100%;
   min-height: 160px;
-  padding: 17px 20px 0 20px;
+  padding: 17px 20px 0 25px;
   box-sizing: border-box;
   background-color: $lightgrey;
   border: none;
@@ -37,11 +28,31 @@
   margin-bottom: 0px; 
 }
 
+.comment span {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .comment__title {
     font-size: $tablet-title-font-size;
   }
+  .comment {
+    border-top: 2px solid #f2f2f2;
+    padding: 55px 0 0;
+    margin: 8px 60px 63px;
+    position: relative;
+  }
   .comment:before {
     display: none; 
+  }
+  .comment span {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-transform: uppercase;
+    font-family: $font-family;
+    font-size: $text-font-size;
+    line-height: 50px;
   }
 }

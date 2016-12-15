@@ -1,18 +1,12 @@
 .why-better {
   color: $white;
-  
   text-transform: uppercase;
   font-family: $font-family;
-  display: flex;
-  flex-direction: column;
 }
 
 .why-better__br--reverse {
   display: none;
 }
-
-
-
 
 .why-better__reason {
   background-color: $lightblue;
@@ -21,12 +15,10 @@
   align-items: center;
   text-align: center;
   box-sizing: border-box;
-  padding: 40px 20px 30px 20px;
-  min-height: 207px;
+  padding: 40px 23px 43px;
 }
 
 .why-better__reason--reverse {
-  min-height: 191px;
   padding-top: 25px;
 }
 
@@ -38,7 +30,6 @@
 
 .why-better__num {
   font-size: $text-font-size; 
-  
   margin-top: 13px;
 }
 
@@ -46,74 +37,51 @@
 .why-better__text {
   font-size: $text-font-size; 
   box-sizing: border-box;
-  
-  margin-top: 19px;
+  margin-top: 18px;
 }
 
 
 
 
-.why-better__pic {
-  background: url(../img/photo-city@1x.jpg) no-repeat;
-  background-color: lightgreen; /**/
-  background-size: auto 100%;
-  min-height: 260px;
+.why-better__pic img {
+  min-height: 260px; 
 }
-
-.why-better--pic-reverse {
-  
-  background: url(../img/photo-4-mobile@1x.jpg) no-repeat;
-  background-color: lightgreen; /**/
-  background-size: auto 100%;
-  min-height: 260px;
-}
-
 
 
 @media (min-width: 768px) {
   .why-better {
+    display: flex;
     flex-direction: row; 
-    min-height: 256px;
   }
   
   .why-better__reason {
     width: 33.33%;
-    padding: 28px 45px 45px 45px;
+    padding: 28px 45px 20px 45px;
   }
   .why-better__pic {
     width: 66.66%;
-    
+  }
+  .why-better__pic img {
+    min-height: 255px; 
   }
   .why-better__text {
     margin-top: 22px;
     line-height: 20px;
   }
-  .why-better--reverse {
+  .why-better--reverse{
     flex-direction: row-reverse; 
   }
   .why-better__title {
     font-size: $tablet-title-font-size;
-    width: 151px;
-  }
-  .why-better__pic {
-    background-size: 100% auto;
-    min-height: 255px;
-  }
-    
-  .why-better--pic-reverse {
-    background-size: 100% auto;
-    min-height: 255px;
+    width: 151px; /* не знаю как по другому выставить */
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px)  {
   .why-better__reason {
-    padding: 36px 60px 45px 60px;
+    padding: 36px 55px 45px;
   }
-  .why-better__title {
+  .why-better__reason--reverse {
+    padding: 36px 85px 45px;
   }
-  .why-better__br--reverse {
-    display: block;
-  }
-  
 }

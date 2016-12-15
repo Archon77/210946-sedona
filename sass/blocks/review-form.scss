@@ -1,25 +1,15 @@
 .review-form {
   font-family: $font-family;
-  
-  
 }
-
 .review-form__inner {
   display: flex;
-  flex-wrap: wrap;
-  
+  flex-direction: column;
 }
-
-
-
-
-
 .review-form__legend:before {   /* маргины схлапываются - сделал пока так */
   content: '';
   display: block;
   width: 100%;
   height: 20px;
-  
 }
 .review-form__legend {
   font-size: $title-font-size;
@@ -28,32 +18,31 @@
   margin-bottom: 25px;
   text-transform: uppercase;
 }
-
 .review-form__group {
   display: flex;
   flex-direction: column;
 }
-
 .review-form__field {
   display: flex;
   margin-bottom: 25px;
-  
 }
-
 .review-form__label {
   font-size: $text-font-size;
   display: flex;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
+  margin-left: 8px;
 }
-
+.review-form__group--contact .review-form__label {
+  margin-left: 30px;
+}
 .review-form__input {
   background-color: #f2f2f2;
   border: none;
   height: 54px;
   margin-left: 15px;
-  padding: 0 0 0 20px;
+  padding: 0 0 0 28px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -61,11 +50,9 @@
   font-size: $title-font-size;
   font-weight: $title-font-weight;
 }
-
 .review-form__group--contact {
   margin-bottom: 28px;
 }
-
 .review-form__group--contact input {
   margin-left: 0;
   margin-top: 15px;
@@ -84,73 +71,50 @@
   right: 0;
   background-color: black;
 }
-
 .review-form__error {
-  width: 100%;
-  height: 47px;
-  background-color: lightcoral;
+  color: red;
+  font-size: 14px;
+  margin-left: 29px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
-
-
-
 .review-form__label-radio {
   font-weight: $title-font-weight;
   font-size: $title-font-size;
   display: flex;
   align-items: center;
-  margin-left: 5px;
+  margin-left: 11px;
+  margin-bottom: 19px;
 }
-
 .review-form__group--radio {
-  margin-bottom: 33px;
+  margin-bottom: 14px;
 }
-
 .review-form__group--checkbox {
   justify-content: flex-start;
-  
 }
-
 .review-form__label-check {
   font-weight: $title-font-weight;
   font-size: $title-font-size;
   display: flex;
   align-items: center;
-  min-height: 54px;
-  margin-bottom: 5px;
-  
+  margin-top: -4px;
+  margin-left: 7px;
+  margin-bottom: 29px;
 }
-
-
-
-
-
-
-
-
-
-
-
 .review-form__btn {
+  font-family: $font-family;
   color: $white;
   background-color: $lightblue;
   font-size: $title-font-size;
   font-weight: $title-font-weight;
-  width: 100%;
+  width: 280px;
   text-transform: uppercase;
-  line-height: 57px;
-  margin-top: 50px;
-  margin-bottom: 19px;
+  line-height: 58px;
+  margin: 50px auto 17px;
   border: none;
   padding: 0;
-  box-sizing: border-box;
-  
-  
+  box-sizing: border-box;  
 }
-
-
-
-
-
 
 
 
@@ -159,40 +123,100 @@
   .review-form {
     position: relative;
   }
+  .review-form__inner {
+    flex-wrap: wrap;
+  }
+  .review-form__input {
+    padding: 0 0 0 20px;
+  }
+  .review-form__label {
+    margin-left: 6px;
+  }
   .review-form__label-check{
-    width: 46%; /* как вся форма сделана - полная хуйня, и мне правда стыдно :( */
+    width: 205px; 
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: 38px;
+  }
+  .review-form__label-radio {
+    margin-left: 0px;
+    margin-bottom: 28px;
   }
   .review-form__legend {
     font-size: $tablet-title-font-size;
     box-sizing: border-box;
-    width: 300px;
+    /*width: 300px;*/
     text-align: left;
+    padding: 0;
   }
   .review-form__legend:before {
     height: 18px;
   }
   .review-form__group--radio {
     margin-top: 35px;
-    margin-left: 35px;
+    margin-bottom: 28px;
+  }
+  .review-form__group--contact {
+    position: relative;
+    margin-bottom: 36px;
   }
   .review-form__error {
-    display: none; /*  переделать по человечески  */
   }
   .review-form__legend--contact {
     padding: 0;
     text-align: center;
   }
-  
   .review-form__legend--checkbox {
     padding: 0;
     text-align: center;
+    width: 300px; /* пока х3 как по другому */
+  }
+  .comment .review-form__legend {
+    text-align: center;
+    width: 400px;
+  }
+  .review-form__group--checkbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 17px 89px 7px;
+  }
+  .review-form__label-check:nth-of-type(2) {
+    order: 3;
+  }
+  .review-form__label-check:nth-of-type(4) {
+    order: 4;
+  }
+  .review-form__group--contact input {
+    margin-top: 14px;
+  }
+  .review-form__group--contact .review-form__label {
+    margin-left: 22px;
+  }
+  .review-form__field {
+    margin-bottom: -11px;
+    margin-top: 35px;
+  }
+  .review-form__error {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+  }
+  .review-form__label--email {
+    margin-top: 28px;
+  }
+  .review-form__btn {
+    margin: 56px 0 0 0;
+    width: 324px;
+    font-size: $tablet-title-font-size;
   }
 }
 
 @media (min-width: 1200px) {
-  .review-form__group--checkbox {
-    display: flex;
-  }
+  
   .review-form__label-check{
     width: auto;
   }

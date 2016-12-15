@@ -2,7 +2,6 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  min-height: 245px;
 }
 
 .page-footer__tag {
@@ -16,20 +15,20 @@
 @media (min-width: 768px) {
   .page-footer {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
-    min-height: 120px;
+    padding: 35px 60px 35px;
   }
   .page-footer__tag {
-    margin-top: 45px;
+    margin-top: 8px;
   }
 }
 
 @media (min-width: 1200px) {
    .page-footer {
-    justify-content: space-between;
+    padding: 35px 44px 35px 135px;
   }
    .page-footer__tag {
-     margin-left: 132px;
+     margin-top: 10px;
   }
 }

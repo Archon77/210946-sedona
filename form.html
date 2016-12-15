@@ -60,9 +60,11 @@
             <legend class="review-form__legend review-form__legend--contact ">Контактная информация:</legend>
             <div class="review-form__group review-form__group--contact">
               <label class="review-form__label" for="phone">Контактный телефон<sup>*</sup>:</label>
-              <input class="review-form__input" id="phone" type="tel" name="phone" placeholder="Введите телефон" required> <!-- изображение бэкграундом в стилях -->
-              <small class="review-form__error"></small>
-              <label class="review-form__label" for="email">Электронная почта<sup>*</sup>:</label>
+              <input class="review-form__input" id="phone" type="tel" name="phone" placeholder="Введите телефон" required>
+              <small class="review-form__error">
+                Ошибка, перепроверьте номер
+              </small>
+              <label class="review-form__label review-form__label--email" for="email">Электронная почта<sup>*</sup>:</label>
               <input class="review-form__input" id="email" type="email" name="email" placeholder="Введите e-mail" required>
             </div>
           </fieldset>
@@ -70,30 +72,34 @@
             <legend class="review-form__legend">Ваше общее впечатление:</legend>
             <div class="review-form__group review-form__group--radio">
               <input class="review-form__input-radio" name="impression" id="positive" type="radio" value="positive" checked>
-              <label class="review-form__label-radio" for="positive">Скорее положительное</label><br>
+              <label class="review-form__label-radio" for="positive">Скорее положительное</label>
               <input class="review-form__input-radio" name="impression" id="negative" type="radio" value="negative">
-              <label class="review-form__label-radio" for="negative">Скорее отрицательное</label><br>
+              <label class="review-form__label-radio" for="negative">Скорее отрицательное</label>
               <input class="review-form__input-radio" name="impression" id="neutral" type="radio" value="neutral">
-              <label class="review-form__label-radio" for="neutral">Затрудняюсь ответить</label>
+              <label class="review-form__label-radio" for="neutral">Затрудняюсь ответить</label> 
             </div>
           </fieldset>
           <fieldset class="feedback-form">
             <legend class="review-form__legend review-form__legend--checkbox">Посещенные достопримечательности:</legend>
             <div class="review-form__group review-form__group--checkbox">
               <input class="review-form__input-check" name="attraction" id="devil-bridge" type="checkbox" value="devil-bridge" checked>
-              <label class="review-form__label-check" for="devil-bridge">Мост дьявола</label><br>
+              <label class="review-form__label-check" for="devil-bridge">Мост Дьявола</label>
               <input class="review-form__input-check" name="attraction" id="slide-park" type="checkbox" value="slide-park" checked>
-              <label class="review-form__label-check" for="slide-park">Слайд-парк</label><br>
+              <label class="review-form__label-check" for="slide-park">Слайд-парк</label>
               <input class="review-form__input-check" name="attraction" id="mount-bell" type="checkbox" value="mount-bell">
-              <label class="review-form__label-check" for="mount-bell">Гора-колокол</label><br>
+              <label class="review-form__label-check" for="mount-bell">Гора-колокол</label>
               <input class="review-form__input-check" name="attraction" id="red-rocks" type="checkbox" value="red-rocks" checked>
-              <label class="review-form__label-check" for="red-rocks">Красные скалы</label><br>
+              <label class="review-form__label-check" for="red-rocks">Красные скалы</label>
             </div>
           </fieldset>
           <fieldset class="comment">
             <legend class="review-form__legend">Опишите свои эмоции:</legend>
             <textarea class="comment__area" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
             <input class="review-form__btn"type="submit" value="Отправить отзыв">
+            <span>
+              <sup>*</sup> &ndash; Обязательные поля
+            </span>
+            
           </fieldset>
         </div>
       </form>

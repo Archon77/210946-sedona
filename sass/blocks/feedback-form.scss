@@ -3,18 +3,8 @@
   border: none;
   position: relative;
   margin: 0;
-  padding: 0 20px 0 20px;
+  padding: 0 20px 0;
   /*border-top: 1px solid #dbdbdb;*/
-}
-
-.feedback-form:before {
-  content :'';
-  position: absolute;
-  min-width: 320px;
-  height: 1px;
-  background-color: #f2f2f2;
-  top: 0;
-  left: 0;
 }
 
 
@@ -58,8 +48,8 @@ input[type="checkbox"]:checked + label::after {
   top: 12px;
   left: 16px;
   content: "";
-  height: 54px;
-  width: 54px;
+  height: 22px;
+  width: 26px;
   margin: 0 5px 0 0;
   background: url(../img/icon-tick.svg) no-repeat;
   background-size: 25px 25px;
@@ -93,17 +83,19 @@ input[type="radio"]:checked + label::after {
 
 @media (min-width: 768px) {
   .feedback-form {
-    min-height: 135px;
     box-sizing: border-box;
     padding: 0 60px;
   }
   .feedback-form:nth-of-type(1) {
-    max-width: 49%;
-    min-height: 358px; /* пока всё криво - выставляет контакт. информацию  */
+    width: 50%;
+    /*min-height: 358px;*/ /* пока всё криво - выставляет контакт. информацию  */
+    padding: 0 60px 0 50px;
+    
   } 
   .feedback-form:nth-of-type(3) {
-    max-width: 49%;
+    width: 50%;
     order: -1;
+    padding: 0 50px 0 60px;
   }
   .feedback-form:before {
     display: none; 
@@ -114,7 +106,7 @@ input[type="radio"]:checked + label::after {
   .feedback-form:nth-of-type(4) {
     border-top: 2px solid #f2f2f2;
   } 
-  .feedback-form:first-of-type {
+  .feedback-form:nth-of-type(1) {
     border-left: 2px solid #f2f2f2;
   }
   

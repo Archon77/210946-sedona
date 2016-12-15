@@ -1,12 +1,11 @@
 .advantages {
-  min-height: 416px;
   text-transform: uppercase;
   font-family: $font-family;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   box-sizing: border-box;
-  padding: 0 20px;
+  padding: 0 29px 42px;
 }
 
 
@@ -23,7 +22,9 @@
 }
 
 
-
+.br-attraction {
+  display: none;
+}
 
 
 .advantages__pic {
@@ -37,11 +38,11 @@
   font-size: $title-font-size;
   font-weight: $title-font-weight;
   margin: 13px 0 0 10px;
+  width: 77%; /* для переноса advantages__text на мобилке */
 }
 
 .advantages__text {
   font-size: $text-font-size;
-  width: 211px;
   margin: 17px 0 0 50px;
 }
 
@@ -52,19 +53,10 @@
 }
 
 .advantages__item--grey {
-  
-  justify-content: center;
-  align-items: center;
-}
-
-.advantages__item--souvenirs br {
-    display: none;
-  }
-
-.advantages__item--grey {
-  margin-top: 0;
-  min-height: 167px; 
+  margin: 0;
+  padding-bottom: 30px;
   flex-direction: column;
+  align-items: center;
   justify-content: flex-start;
   position: relative;
   text-align: center;
@@ -84,7 +76,7 @@
 .advantages__item--grey .advantages__text {
   margin-top: 20px;
   margin-left: 0;
-  width: 247px;
+  /*width: 247px;*/
 }
 
 .advantages__text-hyphen {
@@ -106,73 +98,83 @@
 
 @media (min-width: 768px) {
   .advantages {
+    display: flex;
     flex-direction: row;
-    min-height: 329px;
     padding: 0;
   }
   .advantages--grey {
-    min-height: 256px;
+  }
+  
+  .br-attraction {
+    display: inline;
   }
   .advantages__item {
     width: 33.33%;
-    
     display: flex;
+    padding: 0 47px 20px;
     flex-direction: column;
     align-items: center;
     text-align: center;
     border: none;
     box-sizing: border-box;
     margin-top: 55px;
+    margin-bottom: 42px;
   }
   .advantages__item--souvenirs {
     order: 2;
   }
   .advantages__item--grey {
     margin-top: 16px;
+    margin-bottom: 0px;
+    padding: 0 50px 20px;
   }
   .advantages__item--grey:before {
-    display: none;
-  }
-  
-  .advantages__text-hyphen {
-    display: inline;
-  }
-  
-  .advantages__text-hyphen__none {
     display: none;
   }
   
   .advantages__title {
     font-size: $tablet-title-font-size;
     margin-top: 27px;
-    margin-left: 0; 
-    width: 140px;
+    margin-left: 0;   /* не работает :( */
+   /* width: 140px;*/
   }
   .advantages__pic {
-    width: 73px;
-    height: 70px;
+    width: 75px;
+    height: 75px;
+    margin-top: 3px;
   }
   
   .advantages__text {
     margin-left: 0; 
     margin-top: 22px;
     line-height: 20px;
-    width: 162px;
   }
   .advantages__item--grey .advantages__text {
     margin-top: 21px;
-    width: 155px;
+    
+    /*width: 155px;*/
+  }
+  .br-attraction {
+    display: none;
   }
 }
 
 @media (min-width: 1200px) {
    .advantages__text {
-      width: 295px;
   }
   .advantages__item--souvenirs br {
     display: block;
   }
-  .advantages__item--grey .advantages__text {
-    width: 260px;
+  .advantages__item {
+    padding: 0 74px 20px;
+    margin-bottom: 63px;
+  }
+  .advantages__item--grey {
+    padding: 0 60px 4px;
+  }
+  .advantages__item--grey .advantages__title {
+    width: 150px;  /* и тут х3 как ограничить */
+  }
+  .br-attraction {
   }
 }
