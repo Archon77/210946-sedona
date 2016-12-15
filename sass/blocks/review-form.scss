@@ -124,6 +124,7 @@
     position: relative;
   }
   .review-form__inner {
+    flex-direction: row;
     flex-wrap: wrap;
   }
   .review-form__input {
