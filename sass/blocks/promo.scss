@@ -74,11 +74,16 @@
   .promo--photo {
     padding: 112px 380px 80px;
   }
-  
+  .promo--form { 
+    padding: 112px 380px 50px;
+  }
   .promo__text {
     margin-top: 31px;
   }
   .promo--photo .promo__text {
+    margin-top: 34px;
+  }
+  .promo--form .promo__text {
     margin-top: 34px;
   }
 }

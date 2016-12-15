@@ -39,7 +39,7 @@
       </div>
       <form class="review-form" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="feedback-form">
-          <legend class="review-form__legend">Представтесь:</legend>
+          <legend class="review-form__legend review-form__legend--name">Представтесь:</legend>
           <div class="review-form__group">
             <div class="review-form__field">
               <label class="review-form__label" for="first_name">Имя<sup>*</sup>:</label> 
@@ -56,23 +56,23 @@
           </div>
         </fieldset>
         <fieldset class="feedback-form">
-          <legend class="review-form__legend review-form__legend--contact ">Контактная информация:</legend>
+          <legend class="review-form__legend review-form__legend--contact">Контактная информация:</legend>
           <div class="review-form__group review-form__group--contact">
-             <div class="review-form__phone">
+             <div class="review-form__contact review-form__contact__phone">
               <label class="review-form__label" for="phone">Контактный телефон<sup>*</sup>:</label>
               <input class="review-form__input" id="phone" type="tel" name="phone" placeholder="Введите телефон" required>
               <small class="review-form__error">
                 Ошибка, перепроверьте номер
               </small>
             </div>
-            <div class="review-form__email">  
+            <div class="review-form__contact review-form__contact__email">  
               <label class="review-form__label review-form__label--email" for="email">Электронная почта<sup>*</sup>:</label>
               <input class="review-form__input" id="email" type="email" name="email" placeholder="Введите e-mail" required>
             </div>  
           </div>
         </fieldset>
         <fieldset class="feedback-form">
-          <legend class="review-form__legend">Ваше общее впечатление:</legend>
+          <legend class="review-form__legend review-form__legend--attraction">Ваше общее впечатление:</legend>
           <div class="review-form__group review-form__group--radio">
             <input class="review-form__input-radio" name="impression" id="positive" type="radio" value="positive" checked>
             <label class="review-form__label-radio" for="positive">Скорее положительное</label>
