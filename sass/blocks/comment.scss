@@ -56,3 +56,9 @@
     line-height: 50px;
   }
 }
+
+@media (min-width: 1200px) {
+  .comment {
+    margin: 8px 120px 66px;
+  }
+}
