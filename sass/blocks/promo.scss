@@ -6,8 +6,18 @@
   box-sizing: border-box;
   margin: 0 auto;
   padding: 40px 21px 40px;
+  position: relative;
 }
-
+.promo--trangle:after {
+  content:'';
+  width: 100%;
+  bottom: -15px;
+  left: 0;
+  position: absolute;
+  height: 37px;
+  background-image: url(../img/bg-triangle.svg);
+  background-size: 100%;
+}
 .promo--photo {
 }
 .promo--form {
