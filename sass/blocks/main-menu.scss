@@ -3,7 +3,28 @@
 
 .main-menu {
   background-color: $lightblue;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 260px;
+    right: 20px;
+    width: 30px;
+    height: 4px;
+    background-color: $lightblue;
+    box-shadow: 0 8px 0 0 $lightblue, 0 16px 0 0 $lightblue;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 23px;
+    height: 23px;
+    background-image: url(../img/icon-cross.svg);
+    background-size: 23px 23px;
+  }
 }
+
 .main-menu__list {
   list-style-type: none;
   padding: 0;
@@ -22,30 +43,26 @@
   font-family: $font-family;
   text-decoration: none;
   color: $white;
+  
+  &:hover {
+  color: $lightblue;
+  }
+  &:active {
+    color: #a1968f;
+  }
+  &:active:hover {
+    color: #604e43;
+  }
+    
 }
-.main-menu:after {
-  content: "";
-  position: absolute;
-  top: 260px;
-  right: 20px;
-  width: 30px;
-  height: 4px;
-  background-color: $lightblue;
-  box-shadow: 0 8px 0 0 $lightblue, 0 16px 0 0 $lightblue;
-}
-.main-menu:before {
-  content: "";
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 23px;
-  height: 23px;
-  background-image: url(../img/icon-cross.svg);
-  background-size: 23px 23px;
-}
+
 @media (min-width: 768px) {
   .main-menu {
     background-color: $white;
+    &:before,
+    &:after {
+      display: none;
+    }
   }
   .main-menu__item {
     background-color: $white;
@@ -64,10 +81,7 @@
     color: #000000;
     font-size: $text-font-size;
   }
-  .main-menu:before,
-  .main-menu:after {
-    display: none;
-  }
+  
 }
 @media (min-width: 1200px) {
   .main-menu__item {

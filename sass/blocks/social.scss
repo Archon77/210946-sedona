@@ -14,6 +14,13 @@
   padding-top: 15px;
   box-sizing: border-box;
   fill: $white;
+  &:hover{
+    background-color: $blue;
+  }
+  &:active{
+    background-color: $darkblue;
+    fill: #88b6d1;
+  }
 }
 
 

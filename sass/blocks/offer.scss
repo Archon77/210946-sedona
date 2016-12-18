@@ -45,6 +45,13 @@
   text-transform: uppercase;
   padding: 0;
   cursor: pointer;
+  &:hover {
+    background-color: $blue;
+  }
+  &:active {
+   background-color: $darkblue;
+   color: #94b9d2;
+  }
 }
 
 @media (min-width: 768px) {

@@ -46,6 +46,12 @@
   box-sizing: border-box;
   font-size: $title-font-size;
   font-weight: $title-font-weight;
+  &:hover {
+    background-color: $grey;
+  }
+  &:focus {
+    background-color: $white;
+  }
 }
 .review-form__group--contact {
   margin-bottom: 28px;
@@ -119,6 +125,17 @@
   border: none;
   padding: 0;
   box-sizing: border-box;  
+  &:hover {
+    background-color: $blue;
+  }
+  &:active {
+   background-color: $darkblue;
+   color: #94b9d2;
+  }
+  &:disabled {
+    background-color: $grey;
+    color: #f8f8f8;
+  }
 }
 
 .review-form__contact__phone .review-form__input {
