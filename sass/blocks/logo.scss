@@ -3,17 +3,14 @@
   justify-content: center;
   width: 100%;
   min-height: 55px;
-  
 }
 .logo__pic {
   position:absolute;
   z-index: 1;
 }
-
-
 @media (min-width: 768px) {
   .logo {
-  width: 102px;
+ /* width: 102px;*/
   position:absolute;
   top: 0;
   left:50%;
@@ -24,7 +21,6 @@
   z-index: 1;
   }
 }
-
 @media (min-width: 1200px) {
   
 }

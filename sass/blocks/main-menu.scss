@@ -1,21 +1,19 @@
 @import "../variables.scss";
+/* Грант ругается на неопределенные переменные если не подключить к меню файл ¯\_(ツ)_/¯ */
 
 .main-menu {
   background-color: $lightblue;
 }
-
 .main-menu__list {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-
 .main-menu__item {
   text-align: center;
   line-height: 55px;
   border-bottom: 1px solid grey; /*?*/
 }
-
 .main-menu__link {
   text-transform: uppercase;
   display: block;
@@ -25,7 +23,6 @@
   text-decoration: none;
   color: $white;
 }
-
 @media (min-width: 768px) {
   .main-menu {
     background-color: $white;
@@ -37,7 +34,6 @@
   }
   .main-menu__item:nth-child(2) {
     margin-right: 20%;
-    
   }
   .main-menu__list {
     display: flex;
@@ -49,30 +45,11 @@
     font-size: $text-font-size;
   }
 }
-
-
 @media (min-width: 1200px) {
   .main-menu__item {
     line-height: 53px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Бургер
 .main-nav--closed .main-nav__toggle::before {
   content: "";

@@ -26,10 +26,20 @@
         </nav>
         <div class="page-header__top-row">
           <div class="logo">
-            <img class="logo__pic" src="img/logo-sedona-mobile.svg" alt="" width="101" height="84">
+           <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img src="img/logo-sedona-mobile.svg" width="186" alt="">
+          </picture>
           </div>
         </div>
         <div class="intro">
+          <img class="intro__text" src="img/text-sedona-index.svg" width="350" height="210" alt="">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/bg-intro-triangle-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/bg-intro-triangle-tablet.svg">
+            <img class="intro__triangle" src="img/bg-intro-triangle-mobile.svg" width="320" alt="">
+          </picture>
         </div>
       </header>
       <main class="page-content">
@@ -44,7 +54,11 @@
             <p class="why-better__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <div class="why-better__pic">
-            <img src="img/photo-city@1x.jpg" width="100%" height="250" alt="">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-city@1x.jpg 1x, img/photo-city@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+              <img src="img/photo-city-mobile@1x.jpg" srcset="img/photo-city-mobile@2x.jpg 2x" width="100%" height="250" alt="">
+            </picture>
           </div>
         </section>
         <section class="advantages">
@@ -71,14 +85,18 @@
             <p class="why-better__text">Да, по нему можно пройти!<br class="why-better__br--reverse"> Если вы осмелитесь, конечно</p>
           </div>
           <div class="why-better__pic">
-            <img src="img/photo-4-mobile@1x.jpg" width="100%" height="250"  alt="">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-bridge@1x.jpg 1x, img/photo-bridge@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+              <img src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="" height="250" alt="">
+            </picture>
           </div>
         </section>
         <section class="advantages advantages--grey">
           <div class="advantages__item advantages__item--grey">
             <h2 class="advantages__title">Небольшая площадь</h2>
             <span class="advantages__num">&ndash; №3 &ndash;</span>
-            <p class="advantages__text">Все достопримеча&shy;тельности<br class="br-attraction"> находятся очень близко</p>
+            <p class="advantages__text">Все достопримеча&shy;тельности<br class="advantages__br-attraction"> находятся очень близко</p>
           </div>
           <div class="advantages__item advantages__item--grey">
             <h2 class="advantages__title">Красивая дорога</h2>

@@ -5,21 +5,11 @@
   width: 100%;
   box-sizing: border-box;
   padding: 0 20px 0;
-  /*border-top: 1px solid #dbdbdb;*/
 }
-
-
-
-
-
-
-
-
 .feedback-form [type="checkbox"],
 .feedback-form [type="radio"] {
   display:none;            
 } 
-
 input[type="checkbox"] + label, 
 input[type="radio"] + label {
   cursor: pointer;
@@ -39,11 +29,9 @@ input[type="checkbox"] + label::before {
   display: inline-block;
   height: 54px;
   width: 54px;
-  
   margin: 0 25px 0 0;
   background-color: #f2f2f2;
 }
-
 input[type="checkbox"]:checked + label::after {
   position: absolute;
   top: 12px;
@@ -55,7 +43,6 @@ input[type="checkbox"]:checked + label::after {
   background: url(../img/icon-tick.svg) no-repeat;
   background-size: 25px 25px;
 }
-
 input[type="radio"]:checked + label::after {
   position: absolute;
   top: 15px;
@@ -68,20 +55,6 @@ input[type="radio"]:checked + label::after {
   margin: 0 5px 0 0;
   background-color: black;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (min-width: 768px) {
   .feedback-form {
     box-sizing: border-box;
@@ -89,33 +62,22 @@ input[type="radio"]:checked + label::after {
   }
   .feedback-form:nth-of-type(1) {
     width: 50%;
-    /*min-height: 358px;*/ /* пока всё криво - выставляет контакт. информацию  */
     padding: 0 60px 0 50px;
-    
+    border-left: 2px solid #f2f2f2;
+  } 
+  .feedback-form:nth-of-type(2) {
+    border-top: 2px solid #f2f2f2;
+    width: 100%;
   } 
   .feedback-form:nth-of-type(3) {
     width: 50%;
     order: -1;
     padding: 0 50px 0 60px;
   }
+  .feedback-form:nth-of-type(4) {
+    border-top: 2px solid #f2f2f2;
+  }
   .feedback-form:before {
     display: none; 
   }
-  .feedback-form:nth-of-type(2) {
-    border-top: 2px solid #f2f2f2;
-    width: 100%;
-  } 
-  .feedback-form:nth-of-type(4) {
-    border-top: 2px solid #f2f2f2;
-  } 
-  .feedback-form:nth-of-type(1) {
-    border-left: 2px solid #f2f2f2;
-  }
-  
-}
-
-@media (min-width: 1200px) {
- /* .feedback-form:nth-of-type(2) br {
-        display: none;
-  }*/
 }

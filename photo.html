@@ -30,6 +30,12 @@
           </div>
         </div>
         <div class="intro intro--small">
+          <img class="intro__text" src="img/text-sedona.svg" width="200" height="80" alt="">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/bg-intro-triangle-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/bg-intro-triangle-tablet.svg">
+            <img class="intro__triangle" src="img/bg-intro-triangle-mobile.svg" width="320" alt="">
+          </picture>
         </div>
       </header>
       <main class="page-content">
@@ -40,7 +46,11 @@
         <section class="gallery clearfix">
           <article class="gallery-item clearfix">
             <a class="gallery-item__link">
-              <img src="img/photo-1-mobile@1x.jpg" alt="" width="280" height="280">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="">
+              </picture>
             </a>
             <div class="gallery-item__footer">
               <div class="gallery-item__text">
@@ -55,7 +65,11 @@
           </article>
           <article class="gallery-item clearfix">
             <a class="gallery-item__link">
-              <img src="img/photo-2-mobile@1x.jpg" alt="" width="280" height="280">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="">
+              </picture>
             </a>
             <div class="gallery-item__footer gallery-item__footer--lighter">
               <div class="gallery-item__text">
@@ -70,7 +84,11 @@
           </article>
           <article class="gallery-item clearfix">
               <a class="gallery-item__link">
-                <img src="img/photo-3-mobile@1x.jpg" alt="" width="280" height="280">
+                <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="">
+              </picture>
               </a>
               <div class="gallery-item__footer">
               <div class="gallery-item__text">
@@ -85,7 +103,11 @@
           </article>
           <article class="gallery-item clearfix">
             <a class="gallery-item__link">
-              <img src="img/photo-4-mobile@1x.jpg" alt="" width="280" height="280">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+                <img src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="">
+              </picture>
             </a>
             <div class="gallery-item__footer gallery-item__footer--lighter">
               <div class="gallery-item__text">
@@ -99,14 +121,17 @@
             </div>
           </article>
         </section>
-        <div class="offer offer--gallery"><!-- переделал пока на promo -->
+        <div class="offer offer--gallery">
           <b class="offer__title">Всё ещё сомневаетесь?</b>
           <p class="offer__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </div>
-        <!-- svg-элементы пока не добавлял, вставил только превьюшку -->
         <div class="gallery-video">
           <div class="gallery-video__preview">
-            <img src="img/video-mobile@1x.jpg" width="320" height="200">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+                <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="280" height="280" alt="">
+              </picture>
           </div>
           <div class="video-controls">
             <div class="video-controls__volume">
