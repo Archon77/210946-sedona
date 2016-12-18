@@ -39,6 +39,7 @@
 .gallery-item__likes-icon {
   width: auto;
   margin: 0;
+  fill: #a9a9a9;
 }
 .gallery-item__likes-count {
   font-size: $text-font-size; 
@@ -125,5 +126,8 @@
     width: 100%;
     z-index: 1;
     box-sizing: border-box;
+  }
+  .gallery-item__likes-icon {
+    fill: $white;
   }
 }

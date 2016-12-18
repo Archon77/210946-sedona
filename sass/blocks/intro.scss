@@ -10,11 +10,16 @@
 .intro__text {
   padding-top: 60px;
 }
-.intro__triangle {
+.intro:after {
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
+  min-height: 25px;
+  background-image: url(../img/bg-intro-triangle-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 .intro--small {
   min-height: 157px;
@@ -48,6 +53,10 @@
     height: 270px;
     width: 455px;
   }
+  .intro:after {
+    height: 57px;
+    background-image: url(../img/bg-intro-triangle-tablet.svg)
+  }
 }
 
 @media (min-width: 768px) and (min-resolution: 144dpi),
@@ -68,6 +77,10 @@
   .intro--small .intro__text {
     padding: 0px 375px 0;
     height: 290px;
+  }
+  .intro:after {
+    height: 55px;
+    background-image: url(../img/bg-intro-triangle-desktop.svg)
   }
 }
     
