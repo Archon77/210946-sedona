@@ -3,10 +3,12 @@
   justify-content: center;
   width: 100%;
   min-height: 55px;
+  position: relative;
 }
-.logo__pic {
+.logo picture {
   position:absolute;
-  
+  z-index: 1;
+  margin: 0 auto;
 }
 @media (min-width: 768px) {
   .logo {

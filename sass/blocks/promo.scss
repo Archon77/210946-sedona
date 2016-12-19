@@ -74,7 +74,9 @@
   .promo__text--form {
     margin-top: 35px;
   }
-  
+  .promo--trangle:after {
+    display: none;
+  }
 }
 
 @media (min-width: 1200px) {
