@@ -8,12 +8,18 @@
   background-color: rgba(0,0,0,0.5);
   box-sizing: border-box;
   padding: 21px;
+  
 }
+
 .video-controls__volume--scale {
   width: 100%;
   height: 2px;
   background-color: rgba(255,255,255,0.5);
   position: relative;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
   &:after {
     content: '';
     position: absolute;
@@ -23,8 +29,14 @@
     border-radius: 50%;
     top: -4px;
     left: 36px;
+    cursor: pointer;
   }
 }
+  
+.video-controls__main svg {
+  cursor: pointer;
+}
+  
 .video-controls__main {
   background-color: #f2f2f2;
   fill: #5c6870;
@@ -38,6 +50,7 @@
   left: 0;
   width: 100%;
 }
+  
 
 .video-controls__replay {
   display: flex;

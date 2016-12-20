@@ -28,6 +28,7 @@
   width: 77%; /* для переноса advantages__text на мобилке */
 }
 .advantages__text {
+  max-width: 100%;
   font-size: $text-font-size;
   margin: 17px 0 0 50px;
 }
