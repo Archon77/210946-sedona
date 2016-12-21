@@ -1,7 +1,28 @@
 @import "../variables.scss";
+/* Грант ругается на неопределенные переменные если не подключить к меню файл ¯\_(ツ)_/¯ */
 
 .main-menu {
   background-color: $lightblue;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 240px;
+    right: 20px;
+    width: 23px;
+    height: 4px;
+    background-color: $lightblue;
+    box-shadow: 0 8px 0 0 $lightblue, 0 16px 0 0 $lightblue;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 23px;
+    height: 23px;
+    background-image: url(../img/icon-cross.svg);
+    background-size: 23px 23px;
+  }
 }
 
 .main-menu__list {
@@ -9,13 +30,11 @@
   padding: 0;
   margin: 0;
 }
-
 .main-menu__item {
   text-align: center;
   line-height: 55px;
   border-bottom: 1px solid grey; /*?*/
 }
-
 .main-menu__link {
   text-transform: uppercase;
   display: block;
@@ -24,11 +43,26 @@
   font-family: $font-family;
   text-decoration: none;
   color: $white;
+  
+  &:hover {
+  color: $lightblue;
+  }
+  &:active {
+    color: #a1968f;
+  }
+  &:active:hover {
+    color: #604e43;
+  }
+    
 }
 
 @media (min-width: 768px) {
   .main-menu {
     background-color: $white;
+    &:before,
+    &:after {
+      display: none;
+    }
   }
   .main-menu__item {
     background-color: $white;
@@ -37,7 +71,6 @@
   }
   .main-menu__item:nth-child(2) {
     margin-right: 20%;
-    
   }
   .main-menu__list {
     display: flex;
@@ -48,45 +81,11 @@
     color: #000000;
     font-size: $text-font-size;
   }
+  
 }
-
-
 @media (min-width: 1200px) {
   .main-menu__item {
     line-height: 53px;
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Бургер
-.main-nav--closed .main-nav__toggle::before {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: 17px;
-  width: 30px;
-  height: 2px;
-  background-color: #ffffff;
-  box-shadow: 0 8px 0 0 #ffffff,
-              0 16px 0 0 #ffffff;
-}
-.main-nav--closed .main-nav__toggle:active::before {
-  background-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3),
-              0 16px 0 0 rgba(255, 255, 255, 0.3);
-} */

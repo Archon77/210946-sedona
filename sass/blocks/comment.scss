@@ -8,10 +8,9 @@
   padding: 20px;
   
 }
-
-
-
-
+.comment legend {
+  margin-bottom: 0px; 
+}
 .comment__area {
   width: 100%;
   min-height: 160px;
@@ -23,27 +22,19 @@
   font-weight: $title-font-weight;
   font-size: $title-font-size;
 }
-
-.comment legend {
-  margin-bottom: 0px; 
-}
-
 .comment span {
   display: none;
 }
 
 @media (min-width: 768px) {
-  .comment__title {
-    font-size: $tablet-title-font-size;
-  }
   .comment {
     border-top: 2px solid #f2f2f2;
     padding: 55px 0 0;
     margin: 8px 60px 63px;
     position: relative;
   }
-  .comment:before {
-    display: none; 
+  .comment__title {
+    font-size: $tablet-title-font-size;
   }
   .comment span {
     display: inline-block;
@@ -54,5 +45,14 @@
     font-family: $font-family;
     font-size: $text-font-size;
     line-height: 50px;
+  }
+  .comment:before {
+    display: none; 
+  }
+}
+
+@media (min-width: 1200px) {
+  .comment {
+    margin: 8px 120px 66px;
   }
 }

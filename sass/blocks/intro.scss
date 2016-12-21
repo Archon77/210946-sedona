@@ -1,33 +1,95 @@
 .intro {
-  min-height: 390px;
+  min-height: 388px;
+  
   background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-position: 50% 0;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #94c0db;
+  position: relative;
 }
-
+.intro__text {
+  padding-top: 90px;
+}
+.intro:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-height: 25px;
+  background-image: url(../img/bg-intro-triangle-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
 .intro--small {
   min-height: 157px;
+  background-position: 0 80%;
 }
-
-
+.intro--small .intro__text {
+  padding: 30px 50px 0;
+  width: 220px;
+  margin: 0 auto;
+}
+@media (min-width: 320px) and (min-resolution: 144dpi),
+       (min-width: 320px) and (min-resolution: 1.5dppx) {
+  .intro {
+    background-image: url(../img/bg-back-mobile@2x.jpg);
+  }        
+}
 @media (min-width: 768px) {
   .intro {
     min-height: 520px;
     background-size: 100% auto;
+    background-image: url(../img/bg-back-tablet@1x.jpg);
   }
   .intro--small {
     min-height: 290px;
   }
-  
+  .intro__text {
+    padding-top: 80px;
+    height: 350px;
+  }
+  .intro--small .intro__text {
+    padding: 0px 160px 0;
+    height: 270px;
+    width: 455px;
+  }
+  .intro:after {
+    height: 57px;
+    background-image: url(../img/bg-intro-triangle-tablet.svg)
+  }
+}
+
+@media (min-width: 768px) and (min-resolution: 144dpi),
+       (min-width: 768px) and (min-resolution: 1.5dppx) {
+  .intro {
+    background-image: url(../img/bg-back-tablet@2x.jpg);
+  }        
 }
 
 
 @media (min-width: 1200px) {
+  .intro {
+    background-image: url(../img/bg-back-desktop@1x.jpg);
+    background-position: 100% 0;
+  }
   .intro--small {
     min-height: 303px;
   }
-
-  
-  
+  .intro--small .intro__text {
+    padding: 0px 375px 0;
+    height: 290px;
+  }
+  .intro:after {
+    height: 55px;
+    background-image: url(../img/bg-intro-triangle-desktop.svg)
+  }
+}
+    
+@media (min-width: 1200px) and (min-resolution: 144dpi),
+       (min-width: 1200px) and (min-resolution: 1.5dppx) {
+  .intro {
+    background-image: url(../img/bg-back-desktop@2x.jpg);
+  }     
 }

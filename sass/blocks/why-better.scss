@@ -2,6 +2,7 @@
   color: $white;
   text-transform: uppercase;
   font-family: $font-family;
+  background-color: $lightblue;
 }
 
 .why-better__br--reverse {
@@ -44,7 +45,9 @@
 
 
 .why-better__pic img {
-  min-height: 260px; 
+  height: auto; 
+  height:255px;
+  overflow: hidden;
 }
 
 
