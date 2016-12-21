@@ -15,6 +15,9 @@
   text-align: center;
   margin-bottom: 25px;
   text-transform: uppercase;
+  
+  display: block;
+  margin: 0 auto;
 }
 .review-form__group {
   display: flex;
@@ -61,13 +64,13 @@
   position: relative;
 }
 
-.review-form__contact .review-form__label:after {
+.review-form__contact:after {
   content: '';
   display: block;
   position: absolute;
   width: 54px;
   height: 54px;
-  top: 33px;
+  bottom: 0;
   right: 0px;
   background-color: #e6e6e6;
   background-image: url(../img/icon-phone.svg);
@@ -75,8 +78,9 @@
   background-position: 50%;
   background-repeat: no-repeat;
 }
-.review-form__contact__email .review-form__label:after {
+.review-form__contact__email:after {
   background-image: url(../img/icon-mail.svg);
+  
 }
 .review-form__contact input {
   margin-left: 0;
@@ -139,12 +143,9 @@
   }
 }
 
-.review-form__contact__phone .review-form__input {
-  margin-bottom: 8px;
-}
 
-.review-form__contact__phone {
-  margin-bottom: 19px;
+.review-form__contact__email {
+  margin-top: 8px;
 }
 
 @media (min-width: 768px) {

@@ -34,14 +34,14 @@ input[type="checkbox"] + label::before {
 }
 input[type="checkbox"]:checked + label::after {
   position: absolute;
-  top: 12px;
+  top: 16px;
   left: 16px;
   content: "";
   height: 22px;
   width: 26px;
   margin: 0 5px 0 0;
   background: url(../img/icon-tick.svg) no-repeat;
-  background-size: 25px 25px;
+  background-size: 100%;
 }
 input[type="radio"]:checked + label::after {
   position: absolute;
