@@ -63,22 +63,27 @@
   margin-left: 20px;
   position: relative;
 }
-
+.review-form__contact--phone {
+  position: relative;
+}
+.review-form__contact--email {
+  position: relative;
+}
 .review-form__contact:after {
   content: '';
   display: block;
   position: absolute;
   width: 54px;
   height: 54px;
-  bottom: 0;
-  right: 0px;
+  top: 36px;
+  right: 0;
   background-color: #e6e6e6;
   background-image: url(../img/icon-phone.svg);
   background-size: 20px 20px;
   background-position: 50%;
   background-repeat: no-repeat;
 }
-.review-form__contact__email:after {
+.review-form__contact--email:after {
   background-image: url(../img/icon-mail.svg);
   
 }
@@ -243,7 +248,7 @@
     width: 324px;
     font-size: $tablet-title-font-size;
   }
-  .review-form__contact__phone {
+  .review-form__contact--phone {
     margin-bottom: -7px;
     position: relative;
   }
@@ -280,6 +285,10 @@
     
     
   }
+  
+  .review-form__contact:after {
+    top: 0;
+  }
   .review-form__contact .review-form__label {
     margin-left: 0;
   }
@@ -313,5 +322,8 @@
   .review-form__contact .review-form__label:after {
     top: -18px;
     right: -335px;
+  }
+  .review-form__contact--phone {
+    margin-right: 65px;
   }
 }
