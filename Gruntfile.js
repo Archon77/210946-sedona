@@ -78,20 +78,22 @@ module.exports = function(grunt) {
       }
     },
     postcss: {
-      options: {
-        processors: [
-          require("autoprefixer")({browsers:
-            [
-              "last 1 version",
-              "last 2 Chrome versions",
-              "last 2 Firefox versions",
-              "last 2 Opera versions",
-              "last 2 Edge versions"
-            ]}),
-          require("css-mqpacker")({
-            sort: true
-          })
-        ],
+      style: {
+        options: {
+          processors: [
+            require("autoprefixer")({browsers:
+              [
+                "last 1 version",
+                "last 2 Chrome versions",
+                "last 2 Firefox versions",
+                "last 2 Opera versions",
+                "last 2 Edge versions"
+              ]}),
+            require("css-mqpacker")({
+              sort: true
+            })
+          ]
+        },
         src: "build/css/*.css"
       }
     },
@@ -122,7 +124,7 @@ module.exports = function(grunt) {
         },
         files: [{
           expand: true,
-          src: ["build/img/** /*.{png,jpg,gif}"]
+          src: ["build/img/*.{png,jpg,gif}"]
         }]
       }
     },
@@ -130,11 +132,11 @@ module.exports = function(grunt) {
       options: {
         svg: {
           style: "display: none"
-        },
-        symbols: {
-          files: {
-            "build/img/symbols.svg": ["img/icons/*.svg"]
-          }
+        }
+      },
+      symbols: {
+        files: {
+          "build/img/symbols.svg": ["img/icons/*.svg"]
         }
       }
     },
@@ -142,7 +144,7 @@ module.exports = function(grunt) {
       symbols: {
         files: [{
           expand: true,
-          src: ["build/img/icons/*.svg"]
+          src: ["build/img/*.svg"]
         }]
       }
     },
