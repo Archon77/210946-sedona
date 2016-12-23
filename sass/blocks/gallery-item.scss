@@ -20,6 +20,7 @@
   flex-direction: column;
   padding: 15px 0px 20px;
 }
+
 .gallery-item__title {
   font-size: $text-font-size;
   font-weight: $title-font-weight;
@@ -123,5 +124,8 @@
   }
   .gallery-item__likes-icon {
     fill: $white;
+  }
+  .gallery-item__text {
+    width: 50%;
   }
 }

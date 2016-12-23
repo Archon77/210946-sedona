@@ -57,6 +57,7 @@
   }
   &:focus {
     background-color: $white;
+    outline: 4px solid #e5e5e5;
   }
 }
 .review-form__group--contact {
