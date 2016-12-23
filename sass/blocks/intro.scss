@@ -1,6 +1,5 @@
 .intro {
-  min-height: 390px;
-  
+  min-height: 390px;  
   background-image: url(../img/bg-back-mobile@1x.jpg);
   background-position: 50% 0;
   background-size: cover;
@@ -73,6 +72,8 @@
   .intro {
     background-image: url(../img/bg-back-desktop@1x.jpg);
     background-position: 100% 0;
+    
+    background-color: black;
   }
   .intro--small {
     min-height: 303px;

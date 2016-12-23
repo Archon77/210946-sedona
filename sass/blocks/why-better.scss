@@ -40,15 +40,10 @@
   box-sizing: border-box;
   margin-top: 18px;
 }
-
-
-
-
-.why-better__pic img {
-  height: 261px;
+.why-better__pic { 
+  height: 255px; 
   overflow: hidden;
 }
-
 
 @media (min-width: 768px) {
   .why-better {
