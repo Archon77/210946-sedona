@@ -58,14 +58,9 @@ module.exports = function(grunt) {
   grunt.registerTask("serve", ["browserSync", "watch"]);
 };*/
 
-/*"use strict";*/
+
 
 module.exports = function(grunt) {
-  /*grunt.loadNpmTasks("grunt-sass");
-  grunt.loadNpmTasks("grunt-postcss");
-  grunt.loadNpmTasks("grunt-contrib-sass");
-  grunt.loadNpmTasks("grunt-contrib-watch");  
-  grunt.loadNpmTasks("grunt-browser-sync");*/
   
   require("load-grunt-tasks")(grunt);
   
@@ -103,8 +98,8 @@ module.exports = function(grunt) {
         tasks: ["copy:html"]
       },
       style: {
-        files: ["less/** /*.less"],
-        tasks: ["less", "postcss", "csso"]
+        files: ["sass/** /*.scss"],
+        tasks: ["sass", "postcss", "csso"]
       }
     },
     csso: {
@@ -197,7 +192,6 @@ module.exports = function(grunt) {
     "symbols",
     "imagemin"
   ]);
-  
 };
 
 

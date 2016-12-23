@@ -32,6 +32,7 @@
   font-size: $text-font-size; 
   margin-top: 17px;
   line-height: 24px;
+  width: 100%; /* ie */
 }
 .offer__btn {
   color: $white;
@@ -100,6 +101,6 @@
     margin-top: 63px;
   }
   .offer__btn {
-    margin-top: 48px;
+    margin-top: 45px;
   }
 }

@@ -1,10 +1,11 @@
 .gallery-video {
   position: relative;
+  height: 200px;
 }
 .gallery-video__preview {
   display: flex;
   justify-content: center;
-  min-height: 200px;
+  
   
   margin-bottom: 105px; /* для футера!! */
 }
@@ -14,22 +15,23 @@
 @media (min-width: 768px) {
   .gallery-video {
     margin: 0 60px;
+    min-height: 500px;
   }
   .gallery-video__preview {
-    min-height: 500px;
    margin-bottom: 42px; /* для футера!! */
   }
   .gallery-video__preview img {
-    height: 100%;
+    height: 500px;
   }
 }
 @media (min-width: 1200px) {
   .gallery-video {
     margin: 0 200px;
+    margin-bottom: 85px;
   }
   .gallery-video__preview {
-    min-height: 500px;
-   margin-bottom: 85px; /* для футера!! */
+  
+    /* для футера!! */
   }
   .gallery-video__preview img {
   }

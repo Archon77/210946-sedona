@@ -1,5 +1,5 @@
 .intro {
-  min-height: 388px;
+  min-height: 390px;
   
   background-image: url(../img/bg-back-mobile@1x.jpg);
   background-position: 50% 0;
@@ -9,7 +9,7 @@
   position: relative;
 }
 .intro__text {
-  padding-top: 90px;
+  padding-top: 94px;
 }
 .intro:after {
   content: '';
@@ -83,6 +83,8 @@
   }
   .intro:after {
     height: 55px;
+    left: -1px;
+    width: 1201px;
     background-image: url(../img/bg-intro-triangle-desktop.svg)
   }
 }

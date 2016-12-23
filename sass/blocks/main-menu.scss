@@ -3,6 +3,16 @@
 
 .main-menu {
   background-color: $lightblue;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    width: 23px;
+    height: 23px;
+    background-image: url(../img/icon-cross.svg);
+    background-size: 23px 23px;
+  }
   &:after {
     content: "";
     position: absolute;
@@ -13,16 +23,6 @@
     background-color: $lightblue;
     box-shadow: 0 8px 0 0 $lightblue, 0 16px 0 0 $lightblue;
   }
-  &:before {
-    content: "";
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 23px;
-    height: 23px;
-    background-image: url(../img/icon-cross.svg);
-    background-size: 23px 23px;
-  }
 }
 
 .main-menu__list {
@@ -32,9 +32,17 @@
 }
 .main-menu__item {
   text-align: center;
-  line-height: 55px;
-  border-bottom: 1px solid grey; /*?*/
+  line-height: 54px;
+  border-top: 1px solid #9ac2db;
+  border-bottom: 1px solid #678fa8;
+  &:first-of-type {
+    border-top: none;
+  }
+  &:last-of-type {
+    border-bottom: none;
+  }
 }
+
 .main-menu__link {
   text-transform: uppercase;
   display: block;
