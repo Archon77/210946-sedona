@@ -34,6 +34,12 @@
   
 .video-controls__main svg {
   cursor: pointer;
+  &:hover {
+    fill: #333333;
+  }
+  &:active {
+    fill: #c1c1c1;
+  }
 }
   
 .video-controls__main {
