@@ -1,3 +1,21 @@
 .page-header {
   position: relative;
 }
+
+.page-header__top-row:before {
+  content: "";
+  display: none;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  width: 23px;
+  height: 4px;
+  background-color: #81b3d2;
+  box-shadow: 0 8px 0 0 #81b3d2, 0 16px 0 0 #81b3d2;
+}
+
+@media (min-width: 768px) {
+  .page-header__top-row:before {
+    display: none;
+  }
+}

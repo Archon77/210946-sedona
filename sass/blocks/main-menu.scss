@@ -3,6 +3,10 @@
 
 .main-menu {
   background-color: $lightblue;
+}
+
+.main-menu--open {
+  display: block;
   &:before {
     content: "";
     position: absolute;
@@ -13,16 +17,23 @@
     background-image: url(../img/icon-cross.svg);
     background-size: 23px 23px;
   }
-  &:after {
+}
+.main-menu--closed {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /*&:before {
     content: "";
     position: absolute;
-    top: 240px;
+    top: 15px;
     right: 20px;
     width: 23px;
     height: 4px;
     background-color: $lightblue;
     box-shadow: 0 8px 0 0 $lightblue, 0 16px 0 0 $lightblue;
-  }
+  }*/
 }
 
 .main-menu__list {

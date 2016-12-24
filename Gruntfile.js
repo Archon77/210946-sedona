@@ -81,6 +81,16 @@ module.exports = function(grunt) {
         }]
       }
     },
+    csscomb: {
+      dist: {
+        options: {
+          config: 'csscomb.json'
+        },
+        files: {
+          "css/style.css": ['css/style.css']
+        }
+      }
+    },
     copy: {
       build: {
         files: [{
@@ -122,6 +132,7 @@ module.exports = function(grunt) {
   grunt.registerTask("symbols", ["svgmin", "svgstore"]);
   
   grunt.registerTask("build", [
+    "csscomb",
     "clean",
     "copy",
     "sass",

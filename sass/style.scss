@@ -29,39 +29,5 @@
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
 
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-h2,
-span,
-p,
-b {
-  margin: 0;
-}
-
-img {
-  display: block;
-  width: 100%;
-  /* height: auto -Блок неебически разносит.*/ 
-}
-
-body {
-  min-width: 320px;
-  margin: 0;
-}
-
-@media (min-width: 768px) {
-  body {
-    min-width: 768px;
-  }
-}
-
-@media (min-width: 1200px) {
-  body {
-    min-width: 1200px;
-    
-  }
-}
+@import "global/base.scss";
+@import "global/fonts.scss";
